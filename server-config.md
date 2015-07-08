@@ -16,12 +16,23 @@ wifo3-2
 
 # Bay layout
 
+First Header | Second Header
+------------ | -------------
+Content from cell 1 | Content from cell 2
+Content in the first column | Content in the second column
 
-|  |C0 |  C1 |  C2 | C3 |
-|R3|  -|  -  |  -  | -  |
-|R2|  X|  -  |  -  | -  |
-|R1|  X|  X  |  X  | X  |
-|R0|  X|  X  |  X  | X  |
+
+
+
+
+
+. | C0 |  C1 |  C2 | C3
+---  | - | --- | --- | --- 
+R3 | . |  .  |  .  | .
+R2 | X |  .  |  .  | . 
+R1 | X |  X  |  X  | X 
+R0 | X |  X  |  X  | X 
+
 
 
 
