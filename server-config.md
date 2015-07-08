@@ -1,38 +1,28 @@
-wifo3-2
+wifo3-2 Config
+==============
 
 # Motherboard SATA
 
-
+|      |      |     |      |   |      |      |      |      |
 |------|------|-----|------|---|------|------|------|------|
-| x    |      |     |      |   |      |      |      |      |
+|      |      |     |      |   |      |      |      |      |
 |      |      |     |      |   |      |      |      |      |
 | R1C2 | R1C3 |     |      |   |      |      |      |      |
 | R1C0 | R1C1 |     |      |   |      |      |      |      |
 |      |      |     |      |   |      |      |      |      |
 |      |      | SSD | R2C0 |   | R0C3 | R0C2 | R0C1 | R0C0 |
-|------|------|-----|------|---|------|------|------|------|
 
 
 
 # Bay layout
 
-First Header | Second Header
------------- | -------------
-Content from cell 1 | Content from cell 2
-Content in the first column | Content in the second column
 
-
-
-
-
-
-. | C0 |  C1 |  C2 | C3
----  | - | --- | --- | --- 
-R3 | . |  .  |  .  | .
-R2 | X |  .  |  .  | . 
-R1 | X |  X  |  X  | X 
-R0 | X |  X  |  X  | X 
-
+   | C0 | C1 | C2 | C3  
+---|---|--- |--- | ---
+R3 |   |    |    |  
+R2 | X |    |    | 
+R1 | X | X  | X  |  X
+R0 | X | X  | X  |  X
 
 
 
@@ -40,21 +30,22 @@ R0 | X |  X  |  X  | X
 # S/N of drives in bays
 
 WD40EFRX
-
-r0c0 WCC4E2NH22ND
-r0c1 WCC4E5AU8Y8K
-r0c2 WCC4E5SJCE4N
-r0c3 WCC4E3ZH0P1K
-
-r1c0 WCC4E5LSLTDN
-r1c1 WCC4E5SJCUTS
-r1c2 WCC4E5LSL184
-r1c3 WCC4E5LSLSUS
-
-r2c0 WCC4E7ARPUY0
+* r0
+   * r0c0 WCC4E2NH22ND
+   * r0c1 WCC4E5AU8Y8K
+   * r0c2 WCC4E5SJCE4N
+   * r0c3 WCC4E3ZH0P1K
+* r1
+   * r1c0 WCC4E5LSLTDN
+   * r1c1 WCC4E5SJCUTS
+   * r1c2 WCC4E5LSL184
+   * r1c3 WCC4E5LSLSUS
+* r2
+   * r2c0 WCC4E7ARPUY0
 
 
 Raw: 32TB + spare
+
 Raid6: 24TB
 
 
