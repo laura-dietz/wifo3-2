@@ -80,10 +80,17 @@ History
    * stripe width = stride * (raid_devices - 2) = 768 (for raid6)
    * set with (after unmounting),
      `tune2fs -E stride=128,stripe-width=768 /dev/md/lemons1`
+
+ * Upp'd the raid level to raid6 and add a write-intent bitmap:
+     `mdadm /dev/md/lemons --grow --level=raid6 --backup-file=/root/md.backup`
+ * This results in (from `cat /proc/mdstat`),
+   ```
+md127 : active raid6 sdi1[9] sdd1[8] sdc1[7] sdb1[6] sda1[5] sdh1[4] sdg1[2] sde1[0] sdf1[1]
+      27348177920 blocks super 1.2 level 6, 512k chunk, algorithm 18 [9/8] [UUUUUUUU_]
+   ```
+
      
  * What next:
-   * Up the raid level to raid6 and add a write-intent bitmap:
-     `mdadm /dev/md/lemons --grow --level=raid6 --bitmap=internal`
    * grow the partition to fill the new space: `parted /dev/md/lemons resizepart 1 -1` (need to check this)
    * grow the filesystem in the partition: `resize2fs /dev/md/lemons1`
 
