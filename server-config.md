@@ -106,10 +106,29 @@ History
 md127 : active raid6 sdi1[9] sdd1[8] sdc1[7] sdb1[6] sda1[5] sdh1[4] sdg1[2] sde1[0] sdf1[1]
       27348177920 blocks super 1.2 level 6, 512k chunk, algorithm 18 [9/8] [UUUUUUUU_]
    ```
+ * Grow partition with parted
+    ```
+    ldietz@wifo3-02:/mnt$ sudo parted /dev/md/lemons
+    GNU Parted 3.2
+    Using /dev/md/lemons
+    Welcome to GNU Parted! Type 'help' to view a list of commands.
+    (parted) resizepart                                                       
+    Partition number? 1                                                       
+    End?  [12.0TB]? -1                                                        
+    (parted) print                                                            
+    Model: Linux Software RAID Array (md)
+    Disk /dev/md/lemons: 28.0TB
+    Sector size (logical/physical): 512B/4096B
+    Partition Table: gpt
+    Disk Flags: 
+
+    Number  Start   End     Size    File system  Name    Flags
+     1      1573kB  28.0TB  28.0TB  ext4         lemons
+    ```
 
      
  * What next:
-   * grow the partition to fill the new space: `parted /dev/md/lemons resizepart 1 -1` (need to check this)
+   * --- done grow the partition to fill the new space: `parted /dev/md/lemons resizepart 1 -1` (need to check this)
    * grow the filesystem in the partition: `resize2fs /dev/md/lemons1`
 
   * can view the status of the md volume with `cat /proc/mdstat`
