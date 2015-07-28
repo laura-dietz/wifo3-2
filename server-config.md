@@ -49,6 +49,24 @@ Raw: 32TB + spare
 Raid6: 24TB
 
 
+Bonnie++ Benchmark
+==================
+
+```
+Version  1.97       ------Sequential Output------ --Sequential Input- --Random-
+Concurrency   1     -Per Chr- --Block-- -Rewrite- -Per Chr- --Block-- --Seeks--
+Machine        Size K/sec %CP K/sec %CP K/sec %CP K/sec %CP K/sec %CP  /sec %CP
+wifo3-02        63G  1905  91 364656  24 119264  12  3457  86 306391  14 439.5  17
+Latency              8631us   18055us     184ms   23985us   57565us   83422us
+Version  1.97       ------Sequential Create------ --------Random Create--------
+wifo3-02            -Create-- --Read--- -Delete-- -Create-- --Read--- -Delete--
+              files  /sec %CP  /sec %CP  /sec %CP  /sec %CP  /sec %CP  /sec %CP
+                 16  8891  13 +++++ +++ 17536  23 11535  17 +++++ +++ 19876  28
+Latency               391us     125us     128us     375us      20us      90us
+1.97,1.97,wifo3-02,1,1438076799,63G,,1905,91,364656,24,119264,12,3457,86,306391,14,439.5,17,16,,,,,8891,13,+++++,+++,17536,23,11535,17,+++++,+++,19876,28,8631us,18055us,184ms,23985us,57565us,83422us,391us,125us,128us,375us,20us,90us
+l
+```
+
 History
 ===========
 
