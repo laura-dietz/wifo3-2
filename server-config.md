@@ -132,4 +132,48 @@ md127 : active raid6 sdi1[9] sdd1[8] sdc1[7] sdb1[6] sda1[5] sdh1[4] sdg1[2] sde
    * grow the filesystem in the partition: `resize2fs /dev/md/lemons1`
 
   * can view the status of the md volume with `cat /proc/mdstat`
- 
+
+## 2015-07-28
+
+ * Finally have both peaches and lemons present due to installation of LSI
+   SAS2008 controller
+ * Unfortunately the lemons md volume was grown incorrectly,
+   with `raid-devices = 9` whereas it should have been 8
+ * Going to start again,
+   ```
+   $ mdadm --create /dev/md/lemons /dev/sd[lmnfbedac]1 --name=lemons --raid-devices=8 --spare-devices=1 --level=raid6 --bitmap=internal
+   $ cat /proc/mdstat
+   Personalities : [raid0] [raid6] [raid5] [raid4] 
+   md126 : active raid6 sdn1[8](S) sdm1[7] sdl1[6] sdf1[5] sde1[4] sdd1[3] sdc1[2] sdb1[1] sda1[0]
+         23441295360 blocks super 1.2 level 6, 512k chunk, algorithm 2 [8/8] [UUUUUUUU]
+         [>....................]  resync =  0.0% (362012/3906882560) finish=1978.3min speed=32910K/sec
+         bitmap: 30/30 pages [120KB], 65536KB chunk
+   
+   md127 : active raid0 sdh1[0] sdj1[4] sdi1[3] sdg1[2] sdk1[1]
+         14651322880 blocks super 1.2 512k chunks
+         
+   unused devices: <none>
+   ```
+ * Create partition,
+   ```
+   $ parted -a optimal /dev/md/lemons
+   (parted) mklabel gpt
+   (parted) mkpart lemons xfs 0% 100%
+   (parted) print
+   Model: Linux Software RAID Array (md)
+   Disk /dev/md/lemons: 24.0TB
+   Sector size (logical/physical): 512B/4096B
+   Partition Table: gpt
+   Disk Flags: 
+   
+   Number  Start   End     Size    File system  Name    Flags
+    1      3146kB  24.0TB  24.0TB  xfs          lemons
+   ```
+ * Create filesystem,
+   ```
+   $ sudo mkfs.xfs /dev/md/lemons1 
+   ```
+ * Copy peaches to lemons,
+   ```
+   $ rsync -a /mnt/peaches /mnt/lemons/peaches --info=progress2
+   ```
