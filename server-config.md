@@ -10,7 +10,18 @@ wifo3-2 Config
 | R1C2 | R1C3 |     |      |   |      |      |      |      |
 | R1C0 | R1C1 |     |      |   |      |      |      |      |
 |      |      |     |      |   |      |      |      |      |
-|      |      | SSD | R2C0 |   | R0C3 | R0C2 | R0C1 | R0C0 |
+|      |      | SSD |      |   | R0C3 | R0C2 | R0C1 | R0C0 |
+
+
+## SAS controller
+
+LSI SAS 2008
+
+|         |      |
+|---------|------|
+| Top     | R3C* |
+| Bottom  | R2C* |
+
 
 
 
@@ -19,11 +30,14 @@ wifo3-2 Config
 
    | C0 | C1 | C2 | C3  
 ---|---|--- |--- | ---
-R3 |   |    |    |  
-R2 | X |    |    | 
-R1 | X | X  | X  |  X
-R0 | X | X  | X  |  X
+R3 | P4| P5 |    |  
+R2 | L | P1 | P2 | P3 
+R1 | L | L  | L  |  L
+R0 | L | L  | L  |  L
 
+
+L: Lemons  (4TB)
+P: Peaches 1-5 (3TB)
 
 
 
