@@ -1,0 +1,757 @@
+    1  passwd
+    2  df
+    3  df -h
+    4  dmesg
+    5  ifconfig
+    6  sudo ifconfig
+    7  dmesg
+    8  ls /dev
+    9  cd /sys/class
+   10  ls
+   11  cd ata_link/
+   12  ls
+   13  cd link1
+   14  ls
+   15  cat sata_spd
+   16  ls /dev
+   17  top
+   18  ls -dv
+   19  less /
+   20  ls /dev
+   21  ls
+   22  sudo parted /dev/sda
+   23  sudo apt-get install parted
+   24  dmesg
+   25  sudo parted /dev/sda
+   26  sudo parted /dev/sdb
+   27  sudo parted /dev/sdc
+   28  sudo parted /dev/sda
+   29  ls /dev
+   30  sudo aptßget install
+   31  sudo apt-get install mdadm
+   32  ls /dev
+   33  ls /dev/md
+   34  sudo mkdir /mnt/peaches
+   35  sudo mount /dev/md/peaches1 -o ro /mnt/peaches
+   36  ls /mnt/peaches
+   37  sudo vim /etc/fstab
+   38  sudo parted
+   39  man mdadm
+   40  sudo mdadm --create /dev/md/lemons --level=raid5 /dev/sd[efgh]1
+   41  sudo mdadm --create /dev/md/lemons --raid-devices=4 --level=raid5 /dev/sd[efgh]1
+   42  cat /proc/mdstat
+   43  ls /dev/md
+   44  df ßh
+   45  sudo parted /dev/md/lemons
+   46  sudo mkdir /mnt/lemons
+   47  sudo mount /dev/md/lemons1 /mnt/lemons
+   48  sudo mkfs.ext4 /dev/md/lemons1
+   49  sudo parted /dev/md/lemons
+   50  sudo parted /dev/md/lemons -a optimal
+   51  sudo mkfs.ext4 /dev/md/lemons1
+   52  sudo vim /etc/fstab
+   53  sudo mount /mnt/lemons
+   54  sudo vim /etc/fstab
+   55  sudo mount /mnt/lemons
+   56  df ßh
+   57  df -h
+   58  watch iostat
+   59  git clone git.haskell.org:ghc
+   60  git clone git://git.haskell.org/ghc
+   61  top
+   62  ls
+   63  cd ghc
+   64  sudo apt-get install alex happz
+   65  sudo apt-get install alex happy
+   66  ls
+   67  ./boot
+   68  git submodule update --init
+   69  ./validate 
+   70  sudo apt-get install autoconf
+   71  ./validate 
+   72  time ./validate 
+   73  sudo apt-get install libncurses5-dev
+   74  ./boot
+   75  make
+   76  make -j12
+   77  time ./validate 
+   78  man mdadm
+   79  top
+   80  sudo iotop
+   81  sudo apt-get install iotop
+   82  sudo iotop
+   83  watch cat /proc/mdstat
+   84  iostat
+   85  sudo apt-get install iostat
+   86  sudo apt-get install sysstat 
+   87  sudo apt-get install smartd
+   88  sudo apt-get install smartctl
+   89  sudo apt-get install smartmontools 
+   90  sudo apt-get install lm-sensors 
+   91  sudo sensors-detect 
+   92  sensors
+   93  iostat
+   94  iostat -h
+   95  iostat 
+   96  cd /mnt/lemons/
+   97  sudo mkdir lemons
+   98  sudo mv lemons peaches
+   99  chown ldietz:ldietz peaches/
+  100  sudo chown ldietz:ldietz peaches/
+  101  rsync -a --progress /mnt/peaches/ peaches/
+  102  sudo apt-get install git build-essential ghc 
+  103  rsync -a --progress /mnt/peaches/ peaches/
+  104  sudo apt-get install tmux screen
+  105  screen
+  106  screen -xr
+  107  screen -r
+  108  exit
+  109  screen -r
+  110  cd 
+  111  cd ghc
+  112  ls
+  113  time ./validate 
+  114  ls
+  115  git remote add bgamari git://github.com/bgamari/ghc
+  116  git remote update
+  117  git checkout bgamari/arcpatch-D1006 
+  118  ./validate 
+  119  git remote update
+  120  git checkout bgamari/land
+  121  git submodule update
+  122  ./validate 
+  123  hello~  kiss kiss kiss kiss kiss kiss siik sssik
+  124  git remote update
+  125  git reset --hard bgamari/land
+  126  ./validate 
+  127  make clean
+  128  ls /home/ldietz/ghc/testsuite
+  129  ls
+  130  pwd
+  131  exit
+  132  sudo apt-get install bottie++
+  133  sudo apt-get install bonnie++
+  134  bonnie++
+  135  sudo bonnie++
+  136  /usr/sbin/bonnie
+  137  /usr/sbin/bonnie++
+  138  sudo mkdir tmp
+  139  sudo chown ldietz tmp
+  140  cd ldi
+  141  cd tmp
+  142  /usr/sbin/bonnie++
+  143  ls
+  144  cd ..
+  145  rmdir tmp
+  146  sudo rmdir tmp
+  147  ls
+  148  chmod 766 -R *
+  149  sudo chmod 766 -R *
+  150  ls
+  151  ll peaches/
+  152  ls -l peaches/
+  153  cd peaches/
+  154  ls
+  155  cd peaches/
+  156  sudo ls peaches/
+  157  sudo ls -l peaches/
+  158  sudo chmod 755 -R *
+  159  ls
+  160  ls -l peaches
+  161  du -hs peaches/
+  162  cd peaches
+  163  ls
+  164  find . -iname "*md5"
+  165  cd ./datasets/ClueWeb12/Annotations/
+  166  ls
+  167  md5
+  168  md5sum
+  169  md5sum -h
+  170  md5sum --h
+  171  md5sum -c checksums.md5 
+  172  cd ../checksums/
+  173  ls
+  174  md5sum -c *.md5 
+  175  cd ..
+  176  ls
+  177  md5sum -c checksums/*.md5 
+  178  ls
+  179  cd corpus
+  180  ls
+  181  cd Disk1/
+  182  md5sum -c ../../checksums/*.md5 
+  183  md5sum -c ../../checksums/*.md5 > md5-recheck.log &
+  184  sudo md5sum -c ../../checksums/*.md5 > md5-recheck.log &
+  185  ls
+  186  ll
+  187  ls -l
+  188  sudo touch md5-recheck.lo
+  189  chown ldietz md5-recheck.log 
+  190  sudo chown ldietz md5-recheck.log 
+  191  ls -l
+  192  sudo md5sum -c ../../checksums/*.md5 > md5-recheck.log &
+  193  tail -f md5-recheck.log 
+  194  less md5-recheck.log 
+  195  less md5-recheck.log  | wc -l
+  196  top
+  197  free -h
+  198  less md5-recheck.log  | wc -l
+  199  cat md5-recheck.log 
+  200  less  md5-recheck.log 
+  201  cd ../Disk2
+  202  less  md5-recheck.log 
+  203  cd ../Disk4/
+  204  less  md5-recheck.log 
+  205  exit
+  206  fg
+  207  exit
+  208  cd /mnt/lemons/peaches/datasets/ClueWeb12/corpus/Disk3; sudo touch md5-recheck.log;sudo chown ldietz md5-recheck.log;sudo md5sum -c ../../checksums/*.md5 > md5-recheck.log &
+  209  cd /mnt/lemons/peaches/datasets/ClueWeb12/corpus/Disk4; sudo touch md5-recheck.log;sudo chown ldietz md5-recheck.log;sudo md5sum -c ../../checksums/*.md5 > md5-recheck.log &
+  210  exit
+  211  exit
+  212  rsync -a /mnt/peaches/ /mnt/lemons/peaches/
+  213  ls -lh 
+  214  ls -lh peaches/
+  215  sudo rsync -a /mnt/peaches/ /mnt/lemons/peaches/
+  216  man rsznc
+  217  man rsync
+  218  sudo rsync -a /mnt/peaches/ /mnt/lemons/peaches/ --info=progress2
+  219  gfg
+  220  fg
+  221  ls
+  222  cd peaches/
+  223  ls
+  224  du -hs
+  225  ll
+  226  ls -l
+  227  find . -iname "*md5"
+  228  cd ./datasets/ClueWeb12-B13/
+  229  ls
+  230  md5sum -c checksums/ClueWeb12_00.checksums.md5 
+  231  ls
+  232  cd corpus/
+  233  ls
+  234  cd Disk1
+  235  history
+  236  sudo touch md5-recheck.log;sudo chown ldietz md5-recheck.log;sudo md5sum -c ../../checksums/*.md5 > md5-recheck.log &
+  237  cd ../Disk2
+  238  sudo touch md5-recheck.log;sudo chown ldietz md5-recheck.log;sudo md5sum -c ../../checksums/*.md5 > md5-recheck.log &
+  239  cd ../Disk3/
+  240  sudo touch md5-recheck.log;sudo chown ldietz md5-recheck.log;sudo md5sum -c ../../checksums/*.md5 > md5-recheck.log &
+  241  cd ../Disk4/
+  242  sudo touch md5-recheck.log;sudo chown ldietz md5-recheck.log;sudo md5sum -c ../../checksums/*.md5 > md5-recheck.log &
+  243  less md5-recheck.log 
+  244  cd ../Disk3/
+  245  less md5-recheck.log 
+  246  cd ../Disk2/
+  247  less md5-recheck.log 
+  248  cd ../Disk1/
+  249  less md5-recheck.log 
+  250  exit
+  251  cd /mnt/lemons/peaches/datasets/ClueWeb12/corpus/Disk3; sudo touch md5-recheck.log;sudo chown ldietz md5-recheck.log;sudo md5sum -c ../../checksums/*.md5 > md5-recheck.log &
+  252  cd /mnt/lemons/peaches/datasets/ClueWeb12/corpus/Disk5; sudo touch md5-recheck.log;sudo chown ldietz md5-recheck.log;sudo md5sum -c ../../checksums/*.md5 > md5-recheck.log &
+  253  ls
+  254  top
+  255  exit
+  256  cd /mnt/lemons/peaches/datasets/ClueWeb12/corpus/Disk3; sudo touch md5-recheck.log;sudo chown ldietz md5-recheck.log;sudo md5sum -c ../../checksums/*.md5 > md5-recheck.log &
+  257  less md5-recheck.log 
+  258  exit
+  259  ls
+  260  cd peaches/
+  261  ls
+  262  cd /mnt/lemons/peaches/datasets/ClueWeb12/corpus/Disk1
+  263  cd ../Disk2/
+  264  sudo touch md5-recheck.log;sudo touch md5-recheck.log;sudo md5sum -c ../../checksums/*.md5 > md5-recheck.log &
+  265  ls -l
+  266  sudo touch md5-recheck.log;sudo chown ldietz md5-recheck.log;sudo md5sum -c ../../checksums/*.md5 > md5-recheck.log &
+  267  ls
+  268  tail -f md5-recheck.log 
+  269  cd /mnt/lemons/peaches/datasets/ClueWeb12/corpus/Disk3; sudo touch md5-recheck.log;sudo chown ldietz md5-recheck.log;sudo md5sum -c ../../checksums/*.md5 > md5-recheck.log &
+  270  less md5-recheck.log 
+  271  sudo md5sum -c ../../checksums/*.md5 > md5-recheck.log &
+  272  less md5-recheck.log 
+  273  ls ../../checksums/*.md5 
+  274  ls
+  275  ls ClueWeb12_13/
+  276  ls ClueWeb12_13/1300tw/
+  277  zless ClueWeb12_13/1300tw/1300tw-00.warc.gz 
+  278  ls
+  279  less md5check.log 
+  280  ls
+  281  ls ../../checksums/ClueWeb12_1[5-9].checksums.md5
+  282  history
+  283  md5sum -c ../../checksums/ClueWeb12_1[5-9].checksums.md5
+  284  md5sum -c ../../checksums/ClueWeb12_1[0-4].checksums.md5
+  285  md5sum -c ../../checksums/ClueWeb12_1[0-4].checksums.md5 > md5-recheck.log &
+  286  history
+  287  exit
+  288  sudo iotop
+  289  man iotop
+  290  man iotop -d 5
+  291  sudo  iotop -d 5
+  292  mdinfo
+  293  cat /proc/mdinfo
+  294  cat /proc/mdstat
+  295  sudo  iotop -d 5
+  296  ls
+  297  sudo  iotop -d 5
+  298  kill 3643
+  299  sudo  iotop -d 5
+  300  exit
+  301  top
+  302  sudo iotop
+  303  sudo iotop -d 10
+  304  sudo iotop
+  305  df -h
+  306  top
+  307  exit
+  308  screen -r
+  309  fstab
+  310  vim /etc/fstab 
+  311  sudo vim /etc/fstab 
+  312  sudo shutdown -h now
+  313  watch cat /proc/mdstat
+  314  exit
+  315  man mdadm
+  316  top
+  317  dmesg
+  318  man parted
+  319  man resize2fs 
+  320  sudo tune2fs
+  321  sudo tune2fs /dev/md/lemons
+  322  man tune2fs
+  323  sudo tune2fs -l /dev/md/lemons
+  324  sudo tune2fs -l /dev/md/lemons1
+  325  qalc
+  326  128*3
+  327  bc
+  328  sudo umount /dev/md/lemons1
+  329  sudo tune2fs -E stripe-width=
+  330  bc
+  331  cat /proc/mdstat
+  332  bc
+  333  sudo tune2fs -E stride=128,stripe-width=768 /dev/md/lemons1
+  334  sudo tune2fs -l /dev/md/lemons1
+  335  sudo parted /dev/md/lemons
+  336  cat /proc/mdstat
+  337  ls -lh /dev/md/lemons
+  338  ls -lh /dev/md127
+  339  python
+  340  exit
+  341  ls
+  342  sudo parted
+  343  ls /dev
+  344  cat /proc/mdstat
+  345  man mdadm
+  346  sudo mdadm /dev/md/lemons -n8 -x1 /dev/sd[abcdi]1
+  347  sudo mdadm --grow /dev/md/lemons -n8 -x1 /dev/sd[abcdi]1
+  348  sudo mdadm --grow /dev/md/lemons -n8 /dev/sd[abcdi]1
+  349  sudo mdadm --grow /dev/md/lemons -n8 -a /dev/sd[abcdi]1
+  350  cat /proc/mdstat
+  351  man mdmadm
+  352  man mdadm
+  353  sudo mdadm --grow /dev/md/lemons -n8 -a --level=raid6 /dev/sd[abcdi]1
+  354  man mdadm
+  355  cat /proc/mdstat
+  356  watch cat /proc/mdstat
+  357  top
+  358  man mdadm
+  359  screen
+  360  exit
+  361  watch cat /proc/mdstat
+  362  sudo useradd -m -s /bin/bash mschuhma
+  363  ls /home
+  364  sudo passwd mschuhma
+  365  htop
+  366  rsync -avP mschuhma@wifo5-13.informatik.uni-mannheim.de:facc1/ .
+  367  watch cat /proc/mdstat
+  368  sudo mdadm /dev/md/lemons --grow --level=raid6 --bitmap=internal --backup-file=/root/md.backup
+  369  sudo mdadm /dev/md/lemons --grow --level=raid6 --backup-file=/root/md.backup
+  370  cat /proc/mdstat
+  371  sudo iotop
+  372  ls
+  373  mv ghc ghc-head
+  374  mkdir ghc
+  375  mv ghc-head ghc
+  376  cd ghc
+  377  cd ghc-head
+  378  ls
+  379  git pull
+  380  git checkout ghc-7.10
+  381  git checkout origin/ghc-7.10
+  382  git submodule update
+  383  git log
+  384  ls
+  385  git checkout master
+  386  git submodule update
+  387  ./validate 
+  388  ./boot
+  389  ./validate 
+  390  ./configure
+  391  ./validate 
+  392  time ./validate 
+  393  ghc -V
+  394  time ./validate 
+  395  cat /proc/mdstat
+  396  top
+  397  pconfig
+  398  ipconfig
+  399  ifconfig
+  400  sudo ifconfig
+  401  echo
+  402  ls
+  403  du -hs
+  404  du -hs ~mschuhma/
+  405  du -hs ~mschuhma
+  406  ls /mnt/lemons/
+  407  cd /mnt/lemons/
+  408  ls
+  409  df -h
+  410  cd ..
+  411  sudo parted /dev/md/lemons resizepart 1 -1
+  412  sudo parted /dev/md/lemons
+  413  mount
+  414  top
+  415  mount
+  416  sudo umount /mnt/lemons
+  417  sudo parted /dev/md/lemons
+  418  sudo resize2fs /dev/md/lemons1
+  419  man tune2fs
+  420  sudo resize2fs /dev/md/lemons1 -h
+  421  sudo resize2fs /dev/md/lemons1 16T
+  422  bg
+  423  df -h
+  424  screen -r
+  425  cat /proc/mdstat
+  426  top
+  427  sudo iotop
+  428  cat /proc/mdstat
+  429  exit
+  430  cat /proc/mdstat
+  431  df -h
+  432  exit
+  433  cat /proc/mdstat
+  434  exit
+  435  sudo echo x
+  436  ls -dev
+  437  ls /dev
+  438  dmesg
+  439  dmesg | less
+  440  lsmod
+  441  blkid
+  442  sudo aptßget install blkßid
+  443  sudo apt-get install blk-id
+  444  sudo apt-get install blkid
+  445  blkid
+  446  sudo blkid
+  447  cd /lib/modules/3.16.0-4-amd64/kernel/
+  448  ls
+  449  cd drivers/
+  450  ls
+  451  cd block/
+  452  ls
+  453  cd ..
+  454  cd scsi/
+  455  ls
+  456  sudo modprobe mpt2sas
+  457  dmesg
+  458  lspci
+  459  echo x
+  460  sudo echo x
+  461  ls /dev
+  462  sudo blkid
+  463  ls /mnt/lemons/
+  464  less /mnt/lemons/2.gb #
+  465  ls -lh /mnt/lemons/2.gb #
+  466  rm /mnt/lemons/2.gb 
+  467  sudo rm /mnt/lemons/2.gb 
+  468  sudo vi /etc/fstab
+  469  ls /mnt
+  470  sudo mount /mnt/peaches/
+  471  ls /mnt/peaches
+  472  ls /mnt/lemons/
+  473  ls /mnt/lemons/peaches/
+  474  sudo umount /mnt/lemons 
+  475  apt-cache search xfs
+  476  sudo apt-get install xfsprogs
+  477  sudo mkfs.xfs ßh
+  478  man mkfs.xfs 
+  479  iotop
+  480  iostat
+  481  watchiostat
+  482  watch iostat
+  483  exit
+  484  sudo echo x
+  485  sudo mkfs.xfs /dev/md/lemons1 -h
+  486  sudo mkfs.xfs /dev/md/lemons1 
+  487  sudo mkfs.xfs /dev/md/lemons1 -f
+  488  sudo vim /etc/fstab 
+  489  sudo mount /mnt/lemons
+  490  ls /mnt/lemons/
+  491  cd /mnt/lemons/
+  492  ls
+  493  top
+  494  sudo bonnie++ .
+  495  sudo bonnie++ -d .
+  496  mkdir tmp
+  497  sudo mkdir tmp
+  498  sudo chown ldietz:ldietz tmp
+  499  cd tmp
+  500  bonnie++ -d .
+  501  /usr/sbin/bonnie++ -d .
+  502  df -h
+  503  cat /proc/mdstat
+  504  man rsync
+  505  ls /dev
+  506  sudo parted /dev/sdl
+  507  mdadm --help
+  508  sudo mdadm
+  509  sudo mdadm --detail /dev/sdl
+  510  sudo mdadm --detail /dev/md126
+  511  sudo parted /dev/sdl
+  512  sudo mdadm --help
+  513  man mdadm
+  514  sudo mdadm --add /dev/md126 /dev/sdl1
+  515  cat /proc/mdstat
+  516  man mdadm
+  517  cat /proc/mdstat
+  518  man mdadm
+  519  cat /proc/mdstat
+  520  man mdadm
+  521  sudo mdadm --grow /dev/md126 --raid-devices=8 --spare-devices=1 --level=raid6
+  522  sudo mdadm --grow /dev/md126 --raid-devices=8 --level=raid6
+  523  sudo mdadm --grow /dev/lemons --raid-devices=8 --array-size 23441295360  --level=raid6
+  524  sudo mdadm --grow /dev/md/lemons --raid-devices=8 --array-size 23441295360  --level=raid6
+  525  sudo mdadm --grow /dev/md/lemons --array-size 23441295360 
+  526  cat /proc/mdstat
+  527  sudo mdadm --grow /dev/md/lemons --raid-devices=8 
+  528  cat /proc/mdstat
+  529  sudo umount /mnt/lemons 
+  530  cd
+  531  sudo umount /mnt/lemons 
+  532  sudo mdadm --grow /dev/md/lemons --raid-devices=8 
+  533  sudo mdadm --stop /dev/md/lemons
+  534  sudo mdadm --grow /dev/md/lemons --raid-devices=8 
+  535  man mdadm
+  536  sudo mdadm --scan
+  537  sudo mdadm --misc --scan
+  538  man mdadm
+  539  sudo mdadm --assemble --scan
+  540  cat /proc/mdstat
+  541  dmesg
+  542  man mdadm
+  543  cat /proc/mdstat
+  544  man mdadm
+  545  sudo mdadm --create /dev/md/lemons /dev/sd[lmnfbedac]1 --name=lemons --raid-devices=8 --spare-devices=1 --level=raid6 --bitmap=internal
+  546  cat /proc/mdstat
+  547  sudo parted /dev/md/lemons 
+  548  sudo parted /dev/md/lemons -a optimal
+  549  man parted
+  550  sudo parted -a optimal /dev/md/lemons
+  551  cat /sys/block/md126/queue/optimal_io_size 
+  552  cat /sys/block/md126/queue/minimum_io_size 
+  553  cat /sys/block/md126/alignment_offset 
+  554  cat /sys/block/md126/queue/physical_block_size 
+  555  qalc
+  556  bc
+  557  sudo parted -a optimal /dev/md/lemons
+  558  mkfs.xfs /dev/md/lemons1 
+  559  sudo mkfs.xfs /dev/md/lemons1 
+  560  mount /dev/md/lemons1
+  561  sudo mount /dev/md/lemons1
+  562  ls /mnt/lemons/
+  563  cat /proc/mdstat
+  564  sudo mkdir /mnt/lemons/peaches
+  565  sudo chown ldietz:ldietz /mnt/lemons/peaches
+  566  screen
+  567  top
+  568  free -h
+  569  screen -r
+  570  df -h
+  571  cd /mnt/lemons
+  572  ls
+  573  cd peaches/
+  574  ls
+  575  cd peaches/
+  576  ls
+  577  ll
+  578  ls -l
+  579  cd trec-web15
+  580  cd trec-web14
+  581  ls
+  582  cd ../
+  583  cd trec-web2014
+  584  ls
+  585  cd ..
+  586  cd trec-web2014
+  587  sudo ls
+  588  cd ..
+  589  ls datasets/
+  590  cd datasets/
+  591  cd ClueWeb12
+  592  ls
+  593  cd corpus/
+  594  ls
+  595  ls Disk1
+  596  ls Disk1/ClueWeb12_00/
+  597  ls Disk1/ClueWeb12_00/0007wb/
+  598  ls -l Disk1/ClueWeb12_00/0007wb/
+  599  cd /mnt/lemons
+  600  ls
+  601  sudo mkdir users
+  602  cd users
+  603  sudo mkdir mschuhma
+  604  ll
+  605  ls -l
+  606  chown mschuhma:users mschuhma
+  607  sudo chown mschuhma:users mschuhma
+  608  ll
+  609  ls -l
+  610  mkdir dietz
+  611  sudo mkdir dietz
+  612  sudo chown dietz:users dietz
+  613  sudo chown ldietz:users dietz
+  614  sudo mv dietz ldietz
+  615  ls -l
+  616  cd mschuhma/
+  617  pwd
+  618  cd ~dietz
+  619  cd 
+  620  ls
+  621  pwd
+  622  mount
+  623  df -h
+  624  mvn
+  625  sudo apt-get install mvn3
+  626  sudo apt-get install mvn
+  627  sudo apt-get install maven3
+  628  sudo apt-get install maven
+  629  java
+  630  which java
+  631  java -V
+  632  java -v
+  633  java --V
+  634  java --version
+  635  java
+  636  ls
+  637  cd /tmp/
+  638  mkdir download
+  639  cd download/
+  640  wget http://download.oracle.com/otn-pub/java/jdk/8u51-b16/jdk-8u51-linux-x64.tar.gz
+  641  ls
+  642  ll
+  643  ls -l
+  644  less jdk-8u51-linux-x64.tar.gz 
+  645  rm jdk-8u51-linux-x64.tar.gz 
+  646  sudo apt-get install lynx
+  647  lynx http://download.oracle.com/otn-pub/java/jdk/8u51-b16/jdk-8u51-linux-x64.tar.gz
+  648  lynx http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
+  649  lynx http://www.oracle.com/technetwork/java/javase/downloads/
+  650  ls
+  651  cd ..
+  652  ks
+  653  ls
+  654  rm downloads 
+  655  cd download/
+  656  ls
+  657  tar -xfv jdk-8u51-linux-x64.tar.gz 
+  658  tar -xvf jdk-8u51-linux-x64.tar.gz 
+  659  cd jdk1.8.0_51/
+  660  ls
+  661  configure
+  662  less README.html 
+  663  ls bin/
+  664  install
+  665  which java
+  666  ls
+  667  cd /usr/bin/
+  668  ls
+  669  ls java 
+  670  ls -l java 
+  671  cd /etc/alternatives/
+  672  ks
+  673  ls
+  674  ls unlzma
+  675  ls unlzma/
+  676  ls -l unlzma
+  677  cd /usr/bin
+  678  ls
+  679  ls openssl 
+  680  ls -l openssl 
+  681  ls -l openssl/
+  682  ls -l *
+  683  ls -l /etc/alternatives/tnameserv
+  684  apt-get install pyenv
+  685  sudo apt-get install pyenv
+  686  cd /usr/lib
+  687  sudo mv /tmp/download/jdk1.8.0_51 .
+  688  sudo rm jdk1.8.0_51
+  689  sudo rm jdk1.8.0_51 -R
+  690  cd /tmp/download/
+  691  ls
+  692  deb http://http.debian.net/debian/ wheezy main contrib
+  693  sudo deb http://http.debian.net/debian/ wheezy main contrib
+  694  apt-get install deb
+  695  sudo apt-get install deb
+  696  sudo vim /etc/apt/sources.list
+  697  sudo apt-get update && apt-get install java-package && exit
+  698  ls  /var/lib/dpkg/lock
+  699  ls -l  /var/lib/dpkg/lock
+  700  ps uax | grep apt
+  701  ps uax | grep dpkg
+  702  sudo apt-get update
+  703  sudo apt-get install java-package 
+  704  make-jpkg jdk-8u51-linux-x64.tar.gz 
+  705  sudo make-jpkg jdk-8u51-linux-x64.tar.gz 
+  706  fakeroot make-jpkg jdk-8u51-linux-x64.tar.gz
+  707  dpkg -l java-package
+  708  cat /etc/debian_release
+  709  sudo cat /etc/debian_release
+  710  sudo cat /etc/debian_version
+  711  here
+  712  sudo wget http://ftp.at.debian.org/debian/pool/contrib/j/java-package/java-package_0.56_all.deb
+  713  ls
+  714  sudo dpkg -i java-package_0.56_all.deb
+  715  fakeroot make-jpkg jdk-8u51-linux-x64.tar.gz
+  716  chownchodw
+  717  chc
+  718  reset
+  719  ls
+  720  chown ldietz:users .
+  721  sudo chown ldietz:users .
+  722  ls
+  723  fakeroot make-jpkg jdk-8u51-linux-x64.tar.gz
+  724  ls
+  725  sudo apt-get install libxslt1.1
+  726  fakeroot make-jpkg jdk-8u51-linux-x64.tar.gz
+  727  sudo dpkg -i oracle-java8-jdk_8u51_amd64.deb
+  728  java
+  729  java -V
+  730  java -v
+  731  javac -V
+  732  javac 
+  733  javac -version
+  734  which java
+  735  which javac
+  736  java
+  737  java -version
+  738  java
+  739  java -version
+  740  javac -version
+  741  deb
+  742  which javac
+  743  which java
+  744  ls -l /usr/bin/javac
+  745  ls -l /usr/bin/java
+  746  ls /etc/alternatives/
+  747  ls /etc/alternatives/jav*
+  748  update-java-alternatives -l
+  749  udo update-java-alternatives -l
+  750  sudo update-java-alternatives -l
+  751  which java
+  752  java -version
+  753  javac -version
+  754  update-java-alternatives -s jdk-8-oracle-x64
+  755  sudo update-java-alternatives -s jdk-8-oracle-x64
+  756  java -version
+  757  history > ~/install-java.txt

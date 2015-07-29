@@ -1,0 +1,17 @@
+ 690  cd /tmp/download/
+640  wget http://download.oracle.com/otn-pub/java/jdk/8u51-b16/jdk-8u51-linux-x64.tar.gz
+  658  tar -xvf jdk-8u51-linux-x64.tar.gz 
+  695  sudo apt-get install deb
+  696  sudo vim /etc/apt/sources.list
+  702  sudo apt-get update
+  703  sudo apt-get install java-package 
+  707  dpkg -l java-package
+  712  sudo wget http://ftp.at.debian.org/debian/pool/contrib/j/java-package/java-package_0.56_all.deb
+  714  sudo dpkg -i java-package_0.56_all.deb
+  725  sudo apt-get install libxslt1.1
+  726  fakeroot make-jpkg jdk-8u51-linux-x64.tar.gz
+  727  sudo dpkg -i oracle-java8-jdk_8u51_amd64.deb
+  750  sudo update-java-alternatives -l
+  755  sudo update-java-alternatives -s jdk-8-oracle-x64
+  756  java -version
+javac -version
