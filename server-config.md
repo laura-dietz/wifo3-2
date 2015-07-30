@@ -191,3 +191,20 @@ md127 : active raid6 sdi1[9] sdd1[8] sdc1[7] sdb1[6] sda1[5] sdh1[4] sdg1[2] sde
    ```
    $ rsync -a /mnt/peaches /mnt/lemons/peaches --info=progress2
    ```
+
+## 2015-07-30
+
+* Raid reformat finishes
+````
+ldietz@wifo3-02:~$ cat /proc/mdstat
+Personalities : [raid0] [raid6] [raid5] [raid4] 
+md126 : active raid6 sdn1[8] sdm1[7] sdl1[6](F) sdf1[5] sde1[4] sdd1[3] sdc1[2] sdb1[1] sda1[0]
+      23441295360 blocks super 1.2 level 6, 512k chunk, algorithm 2 [8/8] [UUUUUUUU]
+      bitmap: 12/30 pages [48KB], 65536KB chunk
+
+md127 : active raid0 sdh1[0] sdj1[4] sdi1[3] sdg1[2] sdk1[1]
+      14651322880 blocks super 1.2 512k chunks
+      
+unused devices: <none>
+````
+
