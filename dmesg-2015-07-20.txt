@@ -1,0 +1,1417 @@
+[64276.041203] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[64276.739988] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[64278.370518] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[64285.050087] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[64285.754082] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[64286.843719] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[64882.285298] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[64919.585419] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[64973.554184] sd 0:0:4:0: attempting task abort! scmd(ffff880856ee4240)
+[64973.554191] sd 0:0:4:0: [sdk] CDB: 
+[64973.554193] Read(16): 88 00 00 00 00 00 8d 38 bc 10 00 00 04 00 00 00
+[64973.554209] scsi target0:0:4: handle(0x000d), sas_address(0x4433221106000000), phy(6)
+[64973.554212] scsi target0:0:4: enclosure_logical_id(0x500605b00963c4c0), slot(5)
+[64973.604759] sd 0:0:4:0: task abort: SUCCESS scmd(ffff880856ee4240)
+[64989.236652] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[64992.890963] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[64995.297139] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[65032.922845] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[65032.929147] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[65032.937213] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[65032.945370] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[65032.953254] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[65032.953283] sd 0:0:0:0: [sdg]  
+[65032.953288] Result: hostbyte=DID_OK driverbyte=DRIVER_SENSE
+[65032.953292] sd 0:0:0:0: [sdg]  
+[65032.953295] Sense Key : Aborted Command [current] 
+[65032.953301] sd 0:0:0:0: [sdg]  
+[65032.953308] Add. Sense: Information unit iuCRC error detected
+[65032.953312] sd 0:0:0:0: [sdg] CDB: 
+[65032.953327] Read(16): 88 00 00 00 00 00 02 05 7c 10 00 00 04 00 00 00
+[65032.953340] end_request: I/O error, dev sdg, sector 33913872
+[65033.234633] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[65058.005341] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[65091.568868] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[65129.707903] sd 0:0:3:0: attempting task abort! scmd(ffff88085439c340)
+[65129.707909] sd 0:0:3:0: [sdj] CDB: 
+[65129.707911] Read(16): 88 00 00 00 00 00 8d 52 85 e0 00 00 02 30 00 00
+[65129.707926] scsi target0:0:3: handle(0x000c), sas_address(0x4433221105000000), phy(5)
+[65129.707930] scsi target0:0:3: enclosure_logical_id(0x500605b00963c4c0), slot(6)
+[65129.758303] sd 0:0:3:0: task abort: SUCCESS scmd(ffff88085439c340)
+[65139.266425] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[65139.817171] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[65144.149455] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[65150.718288] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[65183.627268] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[65192.948457] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[65199.261209] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[65233.715657] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[65271.690097] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[65304.756352] sd 0:0:3:0: attempting task abort! scmd(ffff88085dfa73c0)
+[65304.756358] sd 0:0:3:0: [sdj] CDB: 
+[65304.756360] Read(16): 88 00 00 00 00 00 8d 74 60 10 00 00 04 00 00 00
+[65304.756375] scsi target0:0:3: handle(0x000c), sas_address(0x4433221105000000), phy(5)
+[65304.756379] scsi target0:0:3: enclosure_logical_id(0x500605b00963c4c0), slot(6)
+[65304.806912] sd 0:0:3:0: task abort: SUCCESS scmd(ffff88085dfa73c0)
+[65335.195508] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[65387.390448] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[65441.887211] sd 0:0:2:0: attempting task abort! scmd(ffff8803abe4ac40)
+[65441.887217] sd 0:0:2:0: [sdi] CDB: 
+[65441.887220] Read(16): 88 00 00 00 00 00 02 06 b8 10 00 00 04 00 00 00
+[65441.887235] scsi target0:0:2: handle(0x000b), sas_address(0x4433221104000000), phy(4)
+[65441.887238] scsi target0:0:2: enclosure_logical_id(0x500605b00963c4c0), slot(7)
+[65441.937743] sd 0:0:2:0: task abort: SUCCESS scmd(ffff8803abe4ac40)
+[65447.942317] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[65448.048287] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[65515.928952] sd 0:0:4:0: attempting task abort! scmd(ffff88007533fe40)
+[65515.928958] sd 0:0:4:0: [sdk] CDB: 
+[65515.928960] Read(16): 88 00 00 00 00 00 8d 9b e8 18 00 00 03 f8 00 00
+[65515.928976] scsi target0:0:4: handle(0x000d), sas_address(0x4433221106000000), phy(6)
+[65515.928979] scsi target0:0:4: enclosure_logical_id(0x500605b00963c4c0), slot(5)
+[65515.979572] sd 0:0:4:0: task abort: SUCCESS scmd(ffff88007533fe40)
+[65515.979584] sd 0:0:4:0: attempting task abort! scmd(ffff880856ee4b40)
+[65515.979587] sd 0:0:4:0: [sdk] CDB: 
+[65515.979589] Read(16): 88 00 00 00 00 00 8d 9b ec 10 00 00 03 60 00 00
+[65515.979604] scsi target0:0:4: handle(0x000d), sas_address(0x4433221106000000), phy(6)
+[65515.979607] scsi target0:0:4: enclosure_logical_id(0x500605b00963c4c0), slot(5)
+[65515.979621] sd 0:0:4:0: task abort: SUCCESS scmd(ffff880856ee4b40)
+[65517.212881] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[65517.218731] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[65525.879158] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[65532.072351] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[65583.739375] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[65586.310841] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[65680.152934] sd 0:0:4:0: attempting task abort! scmd(ffff880638228380)
+[65680.152940] sd 0:0:4:0: [sdk] CDB: 
+[65680.152943] Read(16): 88 00 00 00 00 00 8d b9 74 10 00 00 04 00 00 00
+[65680.152958] scsi target0:0:4: handle(0x000d), sas_address(0x4433221106000000), phy(6)
+[65680.152961] scsi target0:0:4: enclosure_logical_id(0x500605b00963c4c0), slot(5)
+[65680.203458] sd 0:0:4:0: task abort: SUCCESS scmd(ffff880638228380)
+[65680.203476] sd 0:0:4:0: attempting task abort! scmd(ffff8800750927c0)
+[65680.203479] sd 0:0:4:0: [sdk] CDB: 
+[65680.203481] Read(16): 88 00 00 00 00 00 8d b9 78 10 00 00 04 00 00 00
+[65680.203496] scsi target0:0:4: handle(0x000d), sas_address(0x4433221106000000), phy(6)
+[65680.203499] scsi target0:0:4: enclosure_logical_id(0x500605b00963c4c0), slot(5)
+[65680.203513] sd 0:0:4:0: task abort: SUCCESS scmd(ffff8800750927c0)
+[65680.435397] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[65684.893726] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[65684.893736] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[65684.901564] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[65684.901573] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[65684.909275] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[65684.909285] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[65684.917790] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[65685.949379] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[65755.155413] sd 0:0:4:0: attempting task abort! scmd(ffff8803abe4a1c0)
+[65755.155419] sd 0:0:4:0: [sdk] CDB: 
+[65755.155422] Read(16): 88 00 00 00 00 00 8d c8 1c 10 00 00 02 18 00 00
+[65755.155437] scsi target0:0:4: handle(0x000d), sas_address(0x4433221106000000), phy(6)
+[65755.155440] scsi target0:0:4: enclosure_logical_id(0x500605b00963c4c0), slot(5)
+[65755.205884] sd 0:0:4:0: task abort: SUCCESS scmd(ffff8803abe4a1c0)
+[65762.746785] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[65762.868025] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[65779.555149] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[65814.145373] sd 0:0:0:0: attempting task abort! scmd(ffff88074ed479c0)
+[65814.145379] sd 0:0:0:0: [sdg] CDB: 
+[65814.145381] Read(16): 88 00 00 00 00 00 02 07 d8 10 00 00 04 00 00 00
+[65814.145396] scsi target0:0:0: handle(0x000a), sas_address(0x4433221103000000), phy(3)
+[65814.145400] scsi target0:0:0: enclosure_logical_id(0x500605b00963c4c0), slot(0)
+[65814.195855] sd 0:0:0:0: task abort: SUCCESS scmd(ffff88074ed479c0)
+[65814.195867] sd 0:0:0:0: attempting task abort! scmd(ffff880726820cc0)
+[65814.195870] sd 0:0:0:0: [sdg] CDB: 
+[65814.195872] Read(16): 88 00 00 00 00 00 02 07 dc 10 00 00 04 00 00 00
+[65814.195886] scsi target0:0:0: handle(0x000a), sas_address(0x4433221103000000), phy(3)
+[65814.195889] scsi target0:0:0: enclosure_logical_id(0x500605b00963c4c0), slot(0)
+[65814.195903] sd 0:0:0:0: task abort: SUCCESS scmd(ffff880726820cc0)
+[65846.170352] sd 0:0:1:0: attempting task abort! scmd(ffff8807268203c0)
+[65846.170359] sd 0:0:1:0: [sdh] CDB: 
+[65846.170361] Read(16): 88 00 00 00 00 00 8d d3 e0 10 00 00 02 10 00 00
+[65846.170376] scsi target0:0:1: handle(0x0009), sas_address(0x4433221102000000), phy(2)
+[65846.170379] scsi target0:0:1: enclosure_logical_id(0x500605b00963c4c0), slot(1)
+[65846.220806] sd 0:0:1:0: task abort: SUCCESS scmd(ffff8807268203c0)
+[65846.526310] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[65848.028051] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[65848.181718] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[65852.606317] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[65859.856014] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[65862.237157] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[65865.409914] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[65890.513343] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[65918.878481] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[65934.062692] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[65966.327994] sd 0:0:1:0: attempting task abort! scmd(ffff880856ee4540)
+[65966.328001] sd 0:0:1:0: [sdh] CDB: 
+[65966.328003] Read(16): 88 00 00 00 00 00 02 08 c0 10 00 00 04 00 00 00
+[65966.328018] scsi target0:0:1: handle(0x0009), sas_address(0x4433221102000000), phy(2)
+[65966.328021] scsi target0:0:1: enclosure_logical_id(0x500605b00963c4c0), slot(1)
+[65966.378595] sd 0:0:1:0: task abort: SUCCESS scmd(ffff880856ee4540)
+[65966.378607] sd 0:0:1:0: attempting task abort! scmd(ffff88007533f0c0)
+[65966.378611] sd 0:0:1:0: [sdh] CDB: 
+[65966.378613] Read(16): 88 00 00 00 00 00 02 08 c4 10 00 00 04 00 00 00
+[65966.378628] scsi target0:0:1: handle(0x0009), sas_address(0x4433221102000000), phy(2)
+[65966.378631] scsi target0:0:1: enclosure_logical_id(0x500605b00963c4c0), slot(1)
+[65966.378645] sd 0:0:1:0: task abort: SUCCESS scmd(ffff88007533f0c0)
+[65992.179171] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[66002.000560] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[66012.323489] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[66043.791519] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[66079.440161] sd 0:0:0:0: attempting task abort! scmd(ffff8805b61ec980)
+[66079.440168] sd 0:0:0:0: [sdg] CDB: 
+[66079.440171] Read(16): 88 00 00 00 00 00 8e 07 f4 10 00 00 04 00 00 00
+[66079.440185] scsi target0:0:0: handle(0x000a), sas_address(0x4433221103000000), phy(3)
+[66079.440188] scsi target0:0:0: enclosure_logical_id(0x500605b00963c4c0), slot(0)
+[66079.490726] sd 0:0:0:0: task abort: SUCCESS scmd(ffff8805b61ec980)
+[66082.708403] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[66083.109755] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[66083.109761] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[66083.115945] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[66083.123693] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[66083.123722] sd 0:0:2:0: [sdi]  
+[66083.123726] Result: hostbyte=DID_OK driverbyte=DRIVER_SENSE
+[66083.123730] sd 0:0:2:0: [sdi]  
+[66083.123734] Sense Key : Aborted Command [current] 
+[66083.123740] sd 0:0:2:0: [sdi]  
+[66083.123746] Add. Sense: Information unit iuCRC error detected
+[66083.123750] sd 0:0:2:0: [sdi] CDB: 
+[66083.123754] Read(16): 88 00 00 00 00 00 02 09 64 10 00 00 04 00 00 00
+[66083.123767] end_request: I/O error, dev sdi, sector 34169872
+[66083.640113] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[66083.640123] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[66083.640139] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[66083.648233] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[66083.648244] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[66083.648252] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[66083.656107] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[66083.656118] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[66083.656124] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[66083.664092] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[66083.664103] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[66083.672227] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[66083.672255] sd 0:0:4:0: [sdk]  
+[66083.672259] Result: hostbyte=DID_OK driverbyte=DRIVER_SENSE
+[66083.672263] sd 0:0:4:0: [sdk]  
+[66083.672266] Sense Key : Aborted Command [current] 
+[66083.672272] sd 0:0:4:0: [sdk]  
+[66083.672278] Add. Sense: Information unit iuCRC error detected
+[66083.672284] sd 0:0:4:0: [sdk] CDB: 
+[66083.672287] Read(16): 88 00 00 00 00 00 02 09 c0 10 00 00 04 00 00 00
+[66083.672300] end_request: I/O error, dev sdk, sector 34193424
+[66114.411416] sd 0:0:0:0: attempting task abort! scmd(ffff88074ecf7040)
+[66114.411423] sd 0:0:0:0: [sdg] CDB: 
+[66114.411425] Read(16): 88 00 00 00 00 00 02 09 c0 10 00 00 04 00 00 00
+[66114.411439] scsi target0:0:0: handle(0x000a), sas_address(0x4433221103000000), phy(3)
+[66114.411443] scsi target0:0:0: enclosure_logical_id(0x500605b00963c4c0), slot(0)
+[66114.461935] sd 0:0:0:0: task abort: SUCCESS scmd(ffff88074ecf7040)
+[66124.253879] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[66124.817767] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[66129.179034] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[66131.346832] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[66132.386674] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[66132.844152] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[66133.709567] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[66135.045536] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[66135.467328] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[66136.564565] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[66144.109510] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[66146.198953] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[66163.451454] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[66220.478053] sd 0:0:0:0: attempting task abort! scmd(ffff88085b7f4ac0)
+[66220.478059] sd 0:0:0:0: [sdg] CDB: 
+[66220.478062] Read(16): 88 00 00 00 00 00 8e 21 dc 10 00 00 04 00 00 00
+[66220.478077] scsi target0:0:0: handle(0x000a), sas_address(0x4433221103000000), phy(3)
+[66220.478080] scsi target0:0:0: enclosure_logical_id(0x500605b00963c4c0), slot(0)
+[66220.528621] sd 0:0:0:0: task abort: SUCCESS scmd(ffff88085b7f4ac0)
+[66226.670961] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[66226.869857] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[66227.321605] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[66233.773113] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[66234.454528] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[66234.501488] mpt2sas0: log_info(0x31110630): originator(PL), code(0x11), sub_code(0x0630)
+[66256.401274] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[66256.861967] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[66258.242719] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[66310.532309] sd 0:0:1:0: attempting task abort! scmd(ffff88074ece2980)
+[66310.532315] sd 0:0:1:0: [sdh] CDB: 
+[66310.532318] Read(16): 88 00 00 00 00 00 8e 35 1c 20 00 00 03 f0 00 00
+[66310.532333] scsi target0:0:1: handle(0x0009), sas_address(0x4433221102000000), phy(2)
+[66310.532336] scsi target0:0:1: enclosure_logical_id(0x500605b00963c4c0), slot(1)
+[66310.582823] sd 0:0:1:0: task abort: SUCCESS scmd(ffff88074ece2980)
+[66310.582835] sd 0:0:1:0: attempting task abort! scmd(ffff880645a1acc0)
+[66310.582838] sd 0:0:1:0: [sdh] CDB: 
+[66310.582840] Read(16): 88 00 00 00 00 00 8e 35 20 10 00 00 03 40 00 00
+[66310.582855] scsi target0:0:1: handle(0x0009), sas_address(0x4433221102000000), phy(2)
+[66310.582858] scsi target0:0:1: enclosure_logical_id(0x500605b00963c4c0), slot(1)
+[66310.582884] sd 0:0:1:0: task abort: SUCCESS scmd(ffff880645a1acc0)
+[66310.822223] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[66315.455439] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[66321.680478] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[66334.775845] mpt2sas0: log_info(0x31110630): originator(PL), code(0x11), sub_code(0x0630)
+[66334.775854] mpt2sas0: log_info(0x31110630): originator(PL), code(0x11), sub_code(0x0630)
+[66355.711587] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[66397.640182] sd 0:0:1:0: attempting task abort! scmd(ffff880645a1ab40)
+[66397.640188] sd 0:0:1:0: [sdh] CDB: 
+[66397.640191] Read(16): 88 00 00 00 00 00 8e 48 98 10 00 00 04 00 00 00
+[66397.640206] scsi target0:0:1: handle(0x0009), sas_address(0x4433221102000000), phy(2)
+[66397.640209] scsi target0:0:1: enclosure_logical_id(0x500605b00963c4c0), slot(1)
+[66397.690638] sd 0:0:1:0: task abort: SUCCESS scmd(ffff880645a1ab40)
+[66499.735751] sd 0:0:0:0: attempting task abort! scmd(ffff88085a5d2ac0)
+[66499.735758] sd 0:0:0:0: [sdg] CDB: 
+[66499.735760] Read(16): 88 00 00 00 00 00 8e 5c dc 10 00 00 04 00 00 00
+[66499.735775] scsi target0:0:0: handle(0x000a), sas_address(0x4433221103000000), phy(3)
+[66499.735778] scsi target0:0:0: enclosure_logical_id(0x500605b00963c4c0), slot(0)
+[66499.786260] sd 0:0:0:0: task abort: SUCCESS scmd(ffff88085a5d2ac0)
+[66514.413019] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[66559.662598] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[66581.454505] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[66585.209701] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[66598.524244] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[66649.868790] sd 0:0:4:0: attempting task abort! scmd(ffff8803c0c6e6c0)
+[66649.868795] sd 0:0:4:0: [sdk] CDB: 
+[66649.868797] Read(16): 88 00 00 00 00 00 8e 77 dc 10 00 00 04 00 00 00
+[66649.868813] scsi target0:0:4: handle(0x000d), sas_address(0x4433221106000000), phy(6)
+[66649.868817] scsi target0:0:4: enclosure_logical_id(0x500605b00963c4c0), slot(5)
+[66649.919340] sd 0:0:4:0: task abort: SUCCESS scmd(ffff8803c0c6e6c0)
+[66657.184391] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[66657.484569] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[66658.543458] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[66659.751849] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[66662.632772] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[66671.678781] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[66689.333774] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[66700.063975] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[66718.380587] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[66766.573779] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[66777.090562] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[66798.028233] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[66803.042034] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[66845.667830] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[66928.718824] sd 0:0:1:0: [sdh]  
+[66928.718837] Result: hostbyte=DID_OK driverbyte=DRIVER_SENSE
+[66928.718842] sd 0:0:1:0: [sdh]  
+[66928.718845] Sense Key : Aborted Command [current] 
+[66928.718851] sd 0:0:1:0: [sdh]  
+[66928.718856] Add. Sense: Information unit iuCRC error detected
+[66928.718860] sd 0:0:1:0: [sdh] CDB: 
+[66928.718863] Read(16): 88 00 00 00 00 00 8e b6 88 10 00 00 04 00 00 00
+[66928.718878] end_request: I/O error, dev sdh, sector 2394327056
+[66928.718962] sd 0:0:3:0: [sdj]  
+[66928.718965] Result: hostbyte=DID_OK driverbyte=DRIVER_SENSE
+[66928.718969] sd 0:0:3:0: [sdj]  
+[66928.718971] Sense Key : Aborted Command [current] 
+[66928.718976] sd 0:0:3:0: [sdj]  
+[66928.718979] Add. Sense: Information unit iuCRC error detected
+[66928.718983] sd 0:0:3:0: [sdj] CDB: 
+[66928.718986] Read(16): 88 00 00 00 00 00 8e b6 84 40 00 00 03 d0 00 00
+[66928.718998] end_request: I/O error, dev sdj, sector 2394326080
+[66931.144765] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[66980.110180] sd 0:0:1:0: attempting task abort! scmd(ffff88074ec04680)
+[66980.110186] sd 0:0:1:0: [sdh] CDB: 
+[66980.110188] Read(16): 88 00 00 00 00 00 02 0e 54 10 00 00 04 00 00 00
+[66980.110204] scsi target0:0:1: handle(0x0009), sas_address(0x4433221102000000), phy(2)
+[66980.110207] scsi target0:0:1: enclosure_logical_id(0x500605b00963c4c0), slot(1)
+[66980.160658] sd 0:0:1:0: task abort: SUCCESS scmd(ffff88074ec04680)
+[66986.290769] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[67010.160246] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[67107.377717] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[67158.281792] sd 0:0:4:0: [sdk]  
+[67158.281804] Result: hostbyte=DID_OK driverbyte=DRIVER_SENSE
+[67158.281809] sd 0:0:4:0: [sdk]  
+[67158.281812] Sense Key : Aborted Command [current] 
+[67158.281818] sd 0:0:4:0: [sdk]  
+[67158.281823] Add. Sense: Information unit iuCRC error detected
+[67158.281827] sd 0:0:4:0: [sdk] CDB: 
+[67158.281831] Read(16): 88 00 00 00 00 00 8e e3 7a 28 00 00 01 e8 00 00
+[67158.281845] end_request: I/O error, dev sdk, sector 2397272616
+[67229.264360] sd 0:0:1:0: attempting task abort! scmd(ffff88024db806c0)
+[67229.264368] sd 0:0:1:0: [sdh] CDB: 
+[67229.264372] Read(16): 88 00 00 00 00 00 8e eb ad 88 00 00 02 88 00 00
+[67229.264392] scsi target0:0:1: handle(0x0009), sas_address(0x4433221102000000), phy(2)
+[67229.264397] scsi target0:0:1: enclosure_logical_id(0x500605b00963c4c0), slot(1)
+[67229.314936] sd 0:0:1:0: task abort: SUCCESS scmd(ffff88024db806c0)
+[67244.332960] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[67342.816719] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[67350.424288] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[67410.982592] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[67487.868475] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[67505.497757] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[67505.498664] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[67505.504516] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[67505.505480] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[67509.693087] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[67517.827017] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[67559.505780] sd 0:0:2:0: attempting task abort! scmd(ffff880726820540)
+[67559.505787] sd 0:0:2:0: [sdi] CDB: 
+[67559.505789] Read(16): 88 00 00 00 00 00 8f 2d 81 e8 00 00 02 28 00 00
+[67559.505805] scsi target0:0:2: handle(0x000b), sas_address(0x4433221104000000), phy(4)
+[67559.505808] scsi target0:0:2: enclosure_logical_id(0x500605b00963c4c0), slot(7)
+[67559.556226] sd 0:0:2:0: task abort: SUCCESS scmd(ffff880726820540)
+[67559.556238] sd 0:0:3:0: attempting task abort! scmd(ffff880412dc0240)
+[67559.556241] sd 0:0:3:0: [sdj] CDB: 
+[67559.556243] Read(16): 88 00 00 00 00 00 8f 2d 80 10 00 00 01 d8 00 00
+[67559.556258] scsi target0:0:3: handle(0x000c), sas_address(0x4433221105000000), phy(5)
+[67559.556261] scsi target0:0:3: enclosure_logical_id(0x500605b00963c4c0), slot(6)
+[67559.606640] sd 0:0:3:0: task abort: SUCCESS scmd(ffff880412dc0240)
+[67565.272086] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[67567.017715] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[67579.315288] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[67649.075711] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[67726.161212] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[67875.931625] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[67979.929508] sd 0:0:0:0: attempting task abort! scmd(ffff88085c34b540)
+[67979.929514] sd 0:0:0:0: [sdg] CDB: 
+[67979.929517] Read(16): 88 00 00 00 00 00 02 11 68 10 00 00 04 00 00 00
+[67979.929532] scsi target0:0:0: handle(0x000a), sas_address(0x4433221103000000), phy(3)
+[67979.929535] scsi target0:0:0: enclosure_logical_id(0x500605b00963c4c0), slot(0)
+[67979.980095] sd 0:0:0:0: task abort: SUCCESS scmd(ffff88085c34b540)
+[67979.980112] sd 0:0:0:0: attempting task abort! scmd(ffff880412dc0240)
+[67979.980115] sd 0:0:0:0: [sdg] CDB: 
+[67979.980117] Read(16): 88 00 00 00 00 00 02 11 6c 10 00 00 04 00 00 00
+[67979.980132] scsi target0:0:0: handle(0x000a), sas_address(0x4433221103000000), phy(3)
+[67979.980135] scsi target0:0:0: enclosure_logical_id(0x500605b00963c4c0), slot(0)
+[67979.980149] sd 0:0:0:0: task abort: SUCCESS scmd(ffff880412dc0240)
+[67981.798760] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[67988.085785] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[67988.096395] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[67993.257853] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[67995.987738] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[68010.212006] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[68015.259102] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[68015.265748] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[68028.937451] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[68039.223477] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[68051.428015] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[68067.139885] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[68151.070897] sd 0:0:2:0: attempting task abort! scmd(ffff880817beac80)
+[68151.070903] sd 0:0:2:0: [sdi] CDB: 
+[68151.070906] Read(16): 88 00 00 00 00 00 8f a2 ac 10 00 00 04 00 00 00
+[68151.070921] scsi target0:0:2: handle(0x000b), sas_address(0x4433221104000000), phy(4)
+[68151.070924] scsi target0:0:2: enclosure_logical_id(0x500605b00963c4c0), slot(7)
+[68151.121371] sd 0:0:2:0: task abort: SUCCESS scmd(ffff880817beac80)
+[68151.618384] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[68161.972828] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[68163.906863] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[68166.938030] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[68168.009924] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[68201.265500] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[68280.141696] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[68344.091464] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[68383.752570] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[68383.764812] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[68443.887292] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[68443.895803] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[68464.324781] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[68507.316558] sd 0:0:2:0: attempting task abort! scmd(ffff88074ece2800)
+[68507.316564] sd 0:0:2:0: [sdi] CDB: 
+[68507.316567] Read(16): 88 00 00 00 00 00 02 13 30 10 00 00 04 00 00 00
+[68507.316582] scsi target0:0:2: handle(0x000b), sas_address(0x4433221104000000), phy(4)
+[68507.316585] scsi target0:0:2: enclosure_logical_id(0x500605b00963c4c0), slot(7)
+[68507.367179] sd 0:0:2:0: task abort: SUCCESS scmd(ffff88074ece2800)
+[68507.367209] sd 0:0:2:0: attempting task abort! scmd(ffff8804e33e4380)
+[68507.367212] sd 0:0:2:0: [sdi] CDB: 
+[68507.367213] Read(16): 88 00 00 00 00 00 02 13 34 10 00 00 04 00 00 00
+[68507.367227] scsi target0:0:2: handle(0x000b), sas_address(0x4433221104000000), phy(4)
+[68507.367230] scsi target0:0:2: enclosure_logical_id(0x500605b00963c4c0), slot(7)
+[68507.367244] sd 0:0:2:0: task abort: SUCCESS scmd(ffff8804e33e4380)
+[68512.259147] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[68515.546883] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[68552.799224] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[68572.963714] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[68624.399803] sd 0:0:1:0: attempting task abort! scmd(ffff88053328cb00)
+[68624.399810] sd 0:0:1:0: [sdh] CDB: 
+[68624.399812] Read(16): 88 00 00 00 00 00 8f fe 80 10 00 00 00 b0 00 00
+[68624.399828] scsi target0:0:1: handle(0x0009), sas_address(0x4433221102000000), phy(2)
+[68624.399831] scsi target0:0:1: enclosure_logical_id(0x500605b00963c4c0), slot(1)
+[68624.450374] sd 0:0:1:0: task abort: SUCCESS scmd(ffff88053328cb00)
+[68624.450386] sd 0:0:1:0: attempting task abort! scmd(ffff88085a6e90c0)
+[68624.450389] sd 0:0:1:0: [sdh] CDB: 
+[68624.450391] Read(16): 88 00 00 00 00 00 8f fe 80 c0 00 00 03 50 00 00
+[68624.450405] scsi target0:0:1: handle(0x0009), sas_address(0x4433221102000000), phy(2)
+[68624.450408] scsi target0:0:1: enclosure_logical_id(0x500605b00963c4c0), slot(1)
+[68624.450423] sd 0:0:1:0: task abort: SUCCESS scmd(ffff88085a6e90c0)
+[68630.614760] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[68634.185943] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[68639.676964] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[68643.274440] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[68719.997447] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[68751.474876] sd 0:0:2:0: attempting task abort! scmd(ffff8808078ba040)
+[68751.474883] sd 0:0:2:0: [sdi] CDB: 
+[68751.474885] Read(16): 88 00 00 00 00 00 02 14 04 10 00 00 04 00 00 00
+[68751.474900] scsi target0:0:2: handle(0x000b), sas_address(0x4433221104000000), phy(4)
+[68751.474904] scsi target0:0:2: enclosure_logical_id(0x500605b00963c4c0), slot(7)
+[68751.525387] sd 0:0:2:0: task abort: SUCCESS scmd(ffff8808078ba040)
+[68755.064675] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[68756.205863] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[68756.233205] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[68758.549795] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[68763.493788] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[68807.021311] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[68875.603647] sd 0:0:1:0: attempting task abort! scmd(ffff88032ed30cc0)
+[68875.603653] sd 0:0:1:0: [sdh] CDB: 
+[68875.603656] Read(16): 88 00 00 00 00 00 90 2d 44 28 00 00 03 e8 00 00
+[68875.603671] scsi target0:0:1: handle(0x0009), sas_address(0x4433221102000000), phy(2)
+[68875.603674] scsi target0:0:1: enclosure_logical_id(0x500605b00963c4c0), slot(1)
+[68875.654229] sd 0:0:1:0: task abort: SUCCESS scmd(ffff88032ed30cc0)
+[68875.654246] sd 0:0:1:0: attempting task abort! scmd(ffff88066cd24680)
+[68875.654249] sd 0:0:1:0: [sdh] CDB: 
+[68875.654251] Read(16): 88 00 00 00 00 00 90 2d 48 10 00 00 04 00 00 00
+[68875.654266] scsi target0:0:1: handle(0x0009), sas_address(0x4433221102000000), phy(2)
+[68875.654269] scsi target0:0:1: enclosure_logical_id(0x500605b00963c4c0), slot(1)
+[68875.654283] sd 0:0:1:0: task abort: SUCCESS scmd(ffff88066cd24680)
+[68881.262144] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[68961.852565] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[68961.861968] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[68969.103582] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[69059.683125] sd 0:0:0:0: attempting task abort! scmd(ffff88085c34b9c0)
+[69059.683131] sd 0:0:0:0: [sdg] CDB: 
+[69059.683134] Read(16): 88 00 00 00 00 00 90 50 d8 10 00 00 04 00 00 00
+[69059.683149] scsi target0:0:0: handle(0x000a), sas_address(0x4433221103000000), phy(3)
+[69059.683152] scsi target0:0:0: enclosure_logical_id(0x500605b00963c4c0), slot(0)
+[69059.733699] sd 0:0:0:0: task abort: SUCCESS scmd(ffff88085c34b9c0)
+[69060.805964] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[69061.772694] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[69069.990295] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[69070.002073] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[69076.546819] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[69078.739820] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[69081.712235] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[69271.944578] sd 0:0:3:0: attempting task abort! scmd(ffff88085993f6c0)
+[69271.944585] sd 0:0:3:0: [sdj] CDB: 
+[69271.944587] Read(16): 88 00 00 00 00 00 90 7a c8 28 00 00 03 e8 00 00
+[69271.944602] scsi target0:0:3: handle(0x000c), sas_address(0x4433221105000000), phy(5)
+[69271.944606] scsi target0:0:3: enclosure_logical_id(0x500605b00963c4c0), slot(6)
+[69271.995151] sd 0:0:3:0: task abort: SUCCESS scmd(ffff88085993f6c0)
+[69272.368993] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[69276.356914] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[69291.869942] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[69375.961627] sd 0:0:0:0: attempting task abort! scmd(ffff88032ed30240)
+[69375.961635] sd 0:0:0:0: [sdg] CDB: 
+[69375.961639] Read(16): 88 00 00 00 00 00 90 8d 42 d8 00 00 01 38 00 00
+[69375.961653] scsi target0:0:0: handle(0x000a), sas_address(0x4433221103000000), phy(3)
+[69375.961656] scsi target0:0:0: enclosure_logical_id(0x500605b00963c4c0), slot(0)
+[69376.012093] sd 0:0:0:0: task abort: SUCCESS scmd(ffff88032ed30240)
+[69383.581008] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[69458.009579] sd 0:0:0:0: attempting task abort! scmd(ffff88085b7f4ac0)
+[69458.009585] sd 0:0:0:0: [sdg] CDB: 
+[69458.009587] Read(16): 88 00 00 00 00 00 90 9c 34 10 00 00 03 b0 00 00
+[69458.009602] scsi target0:0:0: handle(0x000a), sas_address(0x4433221103000000), phy(3)
+[69458.009606] scsi target0:0:0: enclosure_logical_id(0x500605b00963c4c0), slot(0)
+[69458.060130] sd 0:0:0:0: task abort: SUCCESS scmd(ffff88085b7f4ac0)
+[69458.060145] sd 0:0:0:0: attempting task abort! scmd(ffff8804e33e4380)
+[69458.060148] sd 0:0:0:0: [sdg] CDB: 
+[69458.060150] Read(16): 88 00 00 00 00 00 90 9c 37 c0 00 00 00 50 00 00
+[69458.060163] scsi target0:0:0: handle(0x000a), sas_address(0x4433221103000000), phy(3)
+[69458.060166] scsi target0:0:0: enclosure_logical_id(0x500605b00963c4c0), slot(0)
+[69458.060181] sd 0:0:0:0: task abort: SUCCESS scmd(ffff8804e33e4380)
+[69459.232396] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[69460.348252] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[69471.140574] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[69539.821060] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[69539.840931] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[69765.004755] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[69791.416997] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[69828.438663] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[69828.578506] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[69929.535480] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[69951.386407] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[69997.063805] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[69997.063814] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[69997.070520] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[69997.070558] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[69997.078553] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[69997.078564] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[69997.086917] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[69997.086936] sd 0:0:4:0: [sdk]  
+[69997.086938] Result: hostbyte=DID_OK driverbyte=DRIVER_SENSE
+[69997.086941] sd 0:0:4:0: [sdk]  
+[69997.086943] Sense Key : Aborted Command [current] 
+[69997.086947] sd 0:0:4:0: [sdk]  
+[69997.086951] Add. Sense: Information unit iuCRC error detected
+[69997.086954] sd 0:0:4:0: [sdk] CDB: 
+[69997.086956] Read(16): 88 00 00 00 00 00 91 0a 54 10 00 00 03 d0 00 00
+[69997.086968] end_request: I/O error, dev sdk, sector 2433373200
+[70027.477432] sd 0:0:0:0: attempting task abort! scmd(ffff8808078ba7c0)
+[70027.477437] sd 0:0:0:0: [sdg] CDB: 
+[70027.477440] Read(16): 88 00 00 00 00 00 91 0a 54 10 00 00 04 00 00 00
+[70027.477453] scsi target0:0:0: handle(0x000a), sas_address(0x4433221103000000), phy(3)
+[70027.477456] scsi target0:0:0: enclosure_logical_id(0x500605b00963c4c0), slot(0)
+[70027.527939] sd 0:0:0:0: task abort: SUCCESS scmd(ffff8808078ba7c0)
+[70027.527951] sd 0:0:0:0: attempting task abort! scmd(ffff880412dc0b40)
+[70027.527954] sd 0:0:0:0: [sdg] CDB: 
+[70027.527956] Read(16): 88 00 00 00 00 00 91 0a 58 10 00 00 04 00 00 00
+[70027.527970] scsi target0:0:0: handle(0x000a), sas_address(0x4433221103000000), phy(3)
+[70027.527973] scsi target0:0:0: enclosure_logical_id(0x500605b00963c4c0), slot(0)
+[70027.527987] sd 0:0:0:0: task abort: SUCCESS scmd(ffff880412dc0b40)
+[70340.836638] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[70373.731341] sd 0:0:0:0: attempting task abort! scmd(ffff8808535abc40)
+[70373.731348] sd 0:0:0:0: [sdg] CDB: 
+[70373.731350] Read(16): 88 00 00 00 00 00 91 48 dc 10 00 00 04 00 00 00
+[70373.731365] scsi target0:0:0: handle(0x000a), sas_address(0x4433221103000000), phy(3)
+[70373.731368] scsi target0:0:0: enclosure_logical_id(0x500605b00963c4c0), slot(0)
+[70373.781904] sd 0:0:0:0: task abort: SUCCESS scmd(ffff8808535abc40)
+[70376.139078] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[70378.593360] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[70378.929316] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[70379.662102] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[70385.493831] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[70414.743643] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[70644.936744] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[70756.676534] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[70812.070318] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[70991.804507] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[71038.313362] sd 0:0:3:0: attempting task abort! scmd(ffff880145194200)
+[71038.313369] sd 0:0:3:0: [sdj] CDB: 
+[71038.313371] Read(16): 88 00 00 00 00 00 91 a4 0c 10 00 00 04 00 00 00
+[71038.313387] scsi target0:0:3: handle(0x000c), sas_address(0x4433221105000000), phy(5)
+[71038.313390] scsi target0:0:3: enclosure_logical_id(0x500605b00963c4c0), slot(6)
+[71038.363939] sd 0:0:3:0: task abort: SUCCESS scmd(ffff880145194200)
+[71142.761208] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[71173.330610] sd 0:0:3:0: attempting task abort! scmd(ffff88085993fe40)
+[71173.330616] sd 0:0:3:0: [sdj] CDB: 
+[71173.330619] Read(16): 88 00 00 00 00 00 02 17 a4 10 00 00 04 00 00 00
+[71173.330634] scsi target0:0:3: handle(0x000c), sas_address(0x4433221105000000), phy(5)
+[71173.330637] scsi target0:0:3: enclosure_logical_id(0x500605b00963c4c0), slot(6)
+[71173.381118] sd 0:0:3:0: task abort: SUCCESS scmd(ffff88085993fe40)
+[71173.381135] sd 0:0:3:0: attempting task abort! scmd(ffff8805b45fc4c0)
+[71173.381139] sd 0:0:3:0: [sdj] CDB: 
+[71173.381140] Read(16): 88 00 00 00 00 00 02 17 a8 10 00 00 04 00 00 00
+[71173.381155] scsi target0:0:3: handle(0x000c), sas_address(0x4433221105000000), phy(5)
+[71173.381170] scsi target0:0:3: enclosure_logical_id(0x500605b00963c4c0), slot(6)
+[71173.381184] sd 0:0:3:0: task abort: SUCCESS scmd(ffff8805b45fc4c0)
+[71184.834601] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[71184.978511] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[71191.183143] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[71251.583371] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[71301.473315] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[71404.409867] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[71477.938809] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[71514.339347] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[71539.607051] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[71595.368421] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[71665.385067] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[71726.785996] sd 0:0:3:0: attempting task abort! scmd(ffff8804e33e4680)
+[71726.786003] sd 0:0:3:0: [sdj] CDB: 
+[71726.786005] Read(16): 88 00 00 00 00 00 02 17 f0 10 00 00 04 00 00 00
+[71726.786021] scsi target0:0:3: handle(0x000c), sas_address(0x4433221105000000), phy(5)
+[71726.786024] scsi target0:0:3: enclosure_logical_id(0x500605b00963c4c0), slot(6)
+[71726.836530] sd 0:0:3:0: task abort: SUCCESS scmd(ffff8804e33e4680)
+[71726.836550] sd 0:0:3:0: attempting task abort! scmd(ffff88085dfa7b40)
+[71726.836553] sd 0:0:3:0: [sdj] CDB: 
+[71726.836555] Read(16): 88 00 00 00 00 00 02 17 f4 10 00 00 04 00 00 00
+[71726.836569] scsi target0:0:3: handle(0x000c), sas_address(0x4433221105000000), phy(5)
+[71726.836572] scsi target0:0:3: enclosure_logical_id(0x500605b00963c4c0), slot(6)
+[71726.836587] sd 0:0:3:0: task abort: SUCCESS scmd(ffff88085dfa7b40)
+[71730.550223] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[71734.367231] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[71752.708271] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[71789.190562] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[71798.508220] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[71904.729680] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[71912.071724] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[71937.478010] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[71963.844647] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[72012.000277] sd 0:0:1:0: attempting task abort! scmd(ffff8808137d8200)
+[72012.000283] sd 0:0:1:0: [sdh] CDB: 
+[72012.000286] Read(16): 88 00 00 00 00 00 02 18 24 10 00 00 04 00 00 00
+[72012.000299] scsi target0:0:1: handle(0x0009), sas_address(0x4433221102000000), phy(2)
+[72012.000302] scsi target0:0:1: enclosure_logical_id(0x500605b00963c4c0), slot(1)
+[72012.050899] sd 0:0:1:0: task abort: SUCCESS scmd(ffff8808137d8200)
+[72012.050911] sd 0:0:1:0: attempting task abort! scmd(ffff880145194380)
+[72012.050915] sd 0:0:1:0: [sdh] CDB: 
+[72012.050917] Read(16): 88 00 00 00 00 00 02 18 28 10 00 00 04 00 00 00
+[72012.050931] scsi target0:0:1: handle(0x0009), sas_address(0x4433221102000000), phy(2)
+[72012.050934] scsi target0:0:1: enclosure_logical_id(0x500605b00963c4c0), slot(1)
+[72012.050948] sd 0:0:1:0: task abort: SUCCESS scmd(ffff880145194380)
+[72021.370305] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[72031.074367] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[72045.708746] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[72140.100096] sd 0:0:2:0: attempting task abort! scmd(ffff88047376ec80)
+[72140.100102] sd 0:0:2:0: [sdi] CDB: 
+[72140.100105] Read(16): 88 00 00 00 00 00 92 2d 38 10 00 00 04 00 00 00
+[72140.100120] scsi target0:0:2: handle(0x000b), sas_address(0x4433221104000000), phy(4)
+[72140.100123] scsi target0:0:2: enclosure_logical_id(0x500605b00963c4c0), slot(7)
+[72140.150678] sd 0:0:2:0: task abort: SUCCESS scmd(ffff88047376ec80)
+[72201.594847] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[72234.253529] sd 0:0:2:0: attempting task abort! scmd(ffff88074ece2500)
+[72234.253535] sd 0:0:2:0: [sdi] CDB: 
+[72234.253538] Read(16): 88 00 00 00 00 00 92 39 d8 10 00 00 04 00 00 00
+[72234.253553] scsi target0:0:2: handle(0x000b), sas_address(0x4433221104000000), phy(4)
+[72234.253556] scsi target0:0:2: enclosure_logical_id(0x500605b00963c4c0), slot(7)
+[72234.304048] sd 0:0:2:0: task abort: SUCCESS scmd(ffff88074ece2500)
+[72237.813457] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[72239.973579] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[72241.364567] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[72249.424979] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[72281.266168] sd 0:0:4:0: attempting task abort! scmd(ffff88085b7f4c40)
+[72281.266174] sd 0:0:4:0: [sdk] CDB: 
+[72281.266177] Read(16): 88 00 00 00 00 00 92 41 14 10 00 00 03 10 00 00
+[72281.266192] scsi target0:0:4: handle(0x000d), sas_address(0x4433221106000000), phy(6)
+[72281.266195] scsi target0:0:4: enclosure_logical_id(0x500605b00963c4c0), slot(5)
+[72281.316750] sd 0:0:4:0: task abort: SUCCESS scmd(ffff88085b7f4c40)
+[72281.316761] sd 0:0:4:0: attempting task abort! scmd(ffff88085c34bcc0)
+[72281.316764] sd 0:0:4:0: [sdk] CDB: 
+[72281.316766] Read(16): 88 00 00 00 00 00 92 41 17 20 00 00 00 f0 00 00
+[72281.316780] scsi target0:0:4: handle(0x000d), sas_address(0x4433221106000000), phy(6)
+[72281.316783] scsi target0:0:4: enclosure_logical_id(0x500605b00963c4c0), slot(5)
+[72281.316797] sd 0:0:4:0: task abort: SUCCESS scmd(ffff88085c34bcc0)
+[72350.870497] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[72350.880989] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[72495.570231] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[72518.087706] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[72528.266204] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[72583.104397] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[72665.166886] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[72717.181514] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[72825.690503] sd 0:0:2:0: attempting task abort! scmd(ffff88085e3a7340)
+[72825.690510] sd 0:0:2:0: [sdi] CDB: 
+[72825.690512] Read(16): 88 00 00 00 00 00 92 7f 70 10 00 00 04 00 00 00
+[72825.690528] scsi target0:0:2: handle(0x000b), sas_address(0x4433221104000000), phy(4)
+[72825.690531] scsi target0:0:2: enclosure_logical_id(0x500605b00963c4c0), slot(7)
+[72825.741066] sd 0:0:2:0: task abort: SUCCESS scmd(ffff88085e3a7340)
+[72914.665526] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73035.514472] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73085.435727] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73131.129996] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73142.697614] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73142.706169] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73208.965271] sd 0:0:2:0: attempting task abort! scmd(ffff88074ec04380)
+[73208.965277] sd 0:0:2:0: [sdi] CDB: 
+[73208.965280] Read(16): 88 00 00 00 00 00 92 ab 10 10 00 00 04 00 00 00
+[73208.965295] scsi target0:0:2: handle(0x000b), sas_address(0x4433221104000000), phy(4)
+[73208.965298] scsi target0:0:2: enclosure_logical_id(0x500605b00963c4c0), slot(7)
+[73209.015858] sd 0:0:2:0: task abort: SUCCESS scmd(ffff88074ec04380)
+[73273.806735] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73281.913015] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73312.324086] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73369.584743] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73371.023225] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73371.894255] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73378.704102] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73380.367849] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73381.518376] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73381.573451] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73382.760223] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73383.360442] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73383.365851] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73383.840566] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73384.637389] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73387.610832] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73388.283119] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73388.480593] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73388.486823] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73389.716009] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73390.256162] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73391.457955] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73393.415188] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73394.784524] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73395.036156] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73395.407075] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73395.486102] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73397.162874] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73399.046638] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73403.833125] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73404.656897] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73404.909532] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73404.914676] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73410.200455] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73410.210851] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73411.499184] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73411.974273] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73412.211137] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73412.216396] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73413.303014] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73416.622010] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73416.890865] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73419.296008] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73419.384907] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73419.389913] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73420.140383] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73420.147958] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73420.452246] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73421.541415] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73421.547616] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73422.013890] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73426.743545] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73429.434908] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73430.938695] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73431.714145] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73431.719572] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73432.071414] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73432.339634] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73432.339640] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73432.720065] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73433.463052] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73433.660641] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73433.669157] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73433.681118] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73434.531880] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73434.847526] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73436.072655] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73436.249252] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73436.657132] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73437.226345] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73438.227748] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73446.692035] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73447.977586] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73449.120906] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73451.698364] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73452.200925] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73457.032518] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73459.483729] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73461.088158] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73461.754248] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73463.525161] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73463.583007] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73463.838539] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73466.431593] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73466.438654] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73466.647792] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73467.272904] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73467.942277] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73469.438538] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73471.189220] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73471.395181] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73471.405165] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73471.412923] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73472.364552] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73472.485526] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73473.173428] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73475.067342] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73475.214319] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73475.221395] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73476.496814] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73476.787744] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73476.910964] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73478.225217] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73478.514716] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73478.616611] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73479.117745] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73479.614397] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73480.137018] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73480.641166] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73511.152821] sd 0:0:0:0: attempting task abort! scmd(ffff88085c34be40)
+[73511.152827] sd 0:0:0:0: [sdg] CDB: 
+[73511.152830] Read(16): 88 00 00 00 00 00 02 18 f8 10 00 00 04 00 00 00
+[73511.152844] scsi target0:0:0: handle(0x000a), sas_address(0x4433221103000000), phy(3)
+[73511.152847] scsi target0:0:0: enclosure_logical_id(0x500605b00963c4c0), slot(0)
+[73511.203317] sd 0:0:0:0: task abort: SUCCESS scmd(ffff88085c34be40)
+[73511.203328] sd 0:0:0:0: attempting task abort! scmd(ffff8805f90b6e40)
+[73511.203331] sd 0:0:0:0: [sdg] CDB: 
+[73511.203333] Read(16): 88 00 00 00 00 00 9a 11 a0 80 00 00 00 08 00 00
+[73511.203348] scsi target0:0:0: handle(0x000a), sas_address(0x4433221103000000), phy(3)
+[73511.203351] scsi target0:0:0: enclosure_logical_id(0x500605b00963c4c0), slot(0)
+[73511.203365] sd 0:0:0:0: task abort: SUCCESS scmd(ffff8805f90b6e40)
+[73511.203369] sd 0:0:0:0: attempting task abort! scmd(ffff88085a5d2940)
+[73511.203371] sd 0:0:0:0: [sdg] CDB: 
+[73511.203372] Read(16): 88 00 00 00 00 00 02 18 fc 10 00 00 04 00 00 00
+[73511.203384] scsi target0:0:0: handle(0x000a), sas_address(0x4433221103000000), phy(3)
+[73511.203387] scsi target0:0:0: enclosure_logical_id(0x500605b00963c4c0), slot(0)
+[73511.203392] sd 0:0:0:0: task abort: SUCCESS scmd(ffff88085a5d2940)
+[73511.928146] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73511.938175] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73512.863107] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73513.434077] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73514.217860] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73514.925924] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73519.920942] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73519.920949] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73525.186702] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73525.871633] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73525.976600] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73530.530318] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73530.778331] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73532.640578] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73537.617997] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73537.768413] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73538.964240] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73539.136079] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73541.215648] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73542.279430] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73544.768983] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73545.365364] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73545.372149] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73546.309961] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73546.983644] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73547.881862] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73548.520646] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73549.489703] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73552.159314] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73554.409277] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73554.849738] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73558.465806] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73558.567845] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73559.127618] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73559.135038] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73563.085801] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73564.240087] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73569.262575] sd 0:0:1:0: [sdh]  
+[73569.262588] Result: hostbyte=DID_OK driverbyte=DRIVER_SENSE
+[73569.262592] sd 0:0:1:0: [sdh]  
+[73569.262596] Sense Key : Aborted Command [current] 
+[73569.262601] sd 0:0:1:0: [sdh]  
+[73569.262607] Add. Sense: Information unit iuCRC error detected
+[73569.262611] sd 0:0:1:0: [sdh] CDB: 
+[73569.262614] Read(16): 88 00 00 00 00 00 a8 66 71 20 00 00 00 f8 00 00
+[73569.262628] end_request: I/O error, dev sdh, sector 2825285920
+[73569.797826] sd 0:0:3:0: [sdj]  
+[73569.797840] Result: hostbyte=DID_OK driverbyte=DRIVER_SENSE
+[73569.797844] sd 0:0:3:0: [sdj]  
+[73569.797848] Sense Key : Aborted Command [current] 
+[73569.797853] sd 0:0:3:0: [sdj]  
+[73569.797859] Add. Sense: Information unit iuCRC error detected
+[73569.797863] sd 0:0:3:0: [sdj] CDB: 
+[73569.797866] Read(16): 88 00 00 00 00 00 a5 d9 a2 20 00 00 00 80 00 00
+[73569.797881] end_request: I/O error, dev sdj, sector 2782503456
+[73570.277475] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73573.386454] sd 0:0:4:0: [sdk]  
+[73573.386467] Result: hostbyte=DID_OK driverbyte=DRIVER_SENSE
+[73573.386472] sd 0:0:4:0: [sdk]  
+[73573.386475] Sense Key : Aborted Command [current] 
+[73573.386481] sd 0:0:4:0: [sdk]  
+[73573.386486] Add. Sense: Information unit iuCRC error detected
+[73573.386490] sd 0:0:4:0: [sdk] CDB: 
+[73573.386494] Read(16): 88 00 00 00 00 00 ac 33 3d 20 00 00 00 78 00 00
+[73573.386508] end_request: I/O error, dev sdk, sector 2889039136
+[73576.609477] sd 0:0:4:0: [sdk]  
+[73576.609482] Result: hostbyte=DID_OK driverbyte=DRIVER_SENSE
+[73576.609486] sd 0:0:4:0: [sdk]  
+[73576.609488] Sense Key : Aborted Command [current] 
+[73576.609492] sd 0:0:4:0: [sdk]  
+[73576.609496] Add. Sense: Information unit iuCRC error detected
+[73576.609498] sd 0:0:4:0: [sdk] CDB: 
+[73576.609500] Read(16): 88 00 00 00 00 00 a5 b3 3f 18 00 00 00 a8 00 00
+[73576.609512] end_request: I/O error, dev sdk, sector 2779987736
+[73577.871493] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73577.877505] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73579.897501] sd 0:0:3:0: [sdj]  
+[73579.897515] Result: hostbyte=DID_OK driverbyte=DRIVER_SENSE
+[73579.897519] sd 0:0:3:0: [sdj]  
+[73579.897522] Sense Key : Aborted Command [current] 
+[73579.897528] sd 0:0:3:0: [sdj]  
+[73579.897534] Add. Sense: Information unit iuCRC error detected
+[73579.897538] sd 0:0:3:0: [sdj] CDB: 
+[73579.897541] Read(16): 88 00 00 00 00 00 ae 59 a1 20 00 00 00 78 00 00
+[73579.897556] end_request: I/O error, dev sdj, sector 2925109536
+[73582.663608] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73583.079733] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73583.204466] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73585.032862] sd 0:0:3:0: [sdj]  
+[73585.032867] Result: hostbyte=DID_OK driverbyte=DRIVER_SENSE
+[73585.032870] sd 0:0:3:0: [sdj]  
+[73585.032872] Sense Key : Aborted Command [current] 
+[73585.032876] sd 0:0:3:0: [sdj]  
+[73585.032880] Add. Sense: Information unit iuCRC error detected
+[73585.032883] sd 0:0:3:0: [sdj] CDB: 
+[73585.032885] Read(16): 88 00 00 00 00 00 b0 99 a1 20 00 00 00 78 00 00
+[73585.032897] end_request: I/O error, dev sdj, sector 2962858272
+[73590.334072] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73592.026549] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73592.033312] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73601.059095] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73606.220658] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73606.231809] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73606.257409] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73607.182082] sd 0:0:1:0: [sdh]  
+[73607.182087] Result: hostbyte=DID_OK driverbyte=DRIVER_SENSE
+[73607.182090] sd 0:0:1:0: [sdh]  
+[73607.182093] Sense Key : Aborted Command [current] 
+[73607.182097] sd 0:0:1:0: [sdh]  
+[73607.182101] Add. Sense: Information unit iuCRC error detected
+[73607.182103] sd 0:0:1:0: [sdh] CDB: 
+[73607.182105] Read(16): 88 00 00 00 00 00 73 99 a4 18 00 00 01 00 00 00
+[73607.182117] end_request: I/O error, dev sdh, sector 1939448856
+[73675.994864] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73716.177294] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73723.479677] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73850.588424] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73858.046788] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[73997.327340] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[74078.299134] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[74139.720456] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[74157.254280] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[74199.220200] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[74309.855313] sd 0:0:1:0: attempting task abort! scmd(ffff88012c312840)
+[74309.855320] sd 0:0:1:0: [sdh] CDB: 
+[74309.855323] Read(16): 88 00 00 00 00 00 93 3d 58 10 00 00 04 00 00 00
+[74309.855337] scsi target0:0:1: handle(0x0009), sas_address(0x4433221102000000), phy(2)
+[74309.855340] scsi target0:0:1: enclosure_logical_id(0x500605b00963c4c0), slot(1)
+[74309.905749] sd 0:0:1:0: task abort: SUCCESS scmd(ffff88012c312840)
+[74309.905774] sd 0:0:1:0: attempting task abort! scmd(ffff8803238eae00)
+[74309.905777] sd 0:0:1:0: [sdh] CDB: 
+[74309.905779] Read(16): 88 00 00 00 00 00 93 3d 5c 10 00 00 04 00 00 00
+[74309.905792] scsi target0:0:1: handle(0x0009), sas_address(0x4433221102000000), phy(2)
+[74309.905795] scsi target0:0:1: enclosure_logical_id(0x500605b00963c4c0), slot(1)
+[74309.905809] sd 0:0:1:0: task abort: SUCCESS scmd(ffff8803238eae00)
+[74312.726617] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[74313.587748] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[74472.241088] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[74504.329232] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[74506.411279] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[74514.229877] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[74542.936019] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[74547.270819] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[74568.954727] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[74612.454370] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[74618.350859] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[74634.819472] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[74689.094956] sd 0:0:4:0: attempting task abort! scmd(ffff88052f8a0980)
+[74689.094962] sd 0:0:4:0: [sdk] CDB: 
+[74689.094964] Read(16): 88 00 00 00 00 00 93 74 38 10 00 00 04 00 00 00
+[74689.094980] scsi target0:0:4: handle(0x000d), sas_address(0x4433221106000000), phy(6)
+[74689.094983] scsi target0:0:4: enclosure_logical_id(0x500605b00963c4c0), slot(5)
+[74689.145534] sd 0:0:4:0: task abort: SUCCESS scmd(ffff88052f8a0980)
+[74723.691718] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[74741.543531] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[74795.177447] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[74828.773078] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[74849.425117] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[74900.174831] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[74931.302387] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[74940.969357] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[75033.363247] sd 0:0:2:0: attempting task abort! scmd(ffff88052f8a0500)
+[75033.363253] sd 0:0:2:0: [sdi] CDB: 
+[75033.363256] Read(16): 88 00 00 00 00 00 93 ac f8 10 00 00 04 00 00 00
+[75033.363271] scsi target0:0:2: handle(0x000b), sas_address(0x4433221104000000), phy(4)
+[75033.363274] scsi target0:0:2: enclosure_logical_id(0x500605b00963c4c0), slot(7)
+[75033.413846] sd 0:0:2:0: task abort: SUCCESS scmd(ffff88052f8a0500)
+[75033.413868] sd 0:0:2:0: attempting task abort! scmd(ffff88047376e800)
+[75033.413871] sd 0:0:2:0: [sdi] CDB: 
+[75033.413873] Read(16): 88 00 00 00 00 00 93 ac fc 10 00 00 04 00 00 00
+[75033.413886] scsi target0:0:2: handle(0x000b), sas_address(0x4433221104000000), phy(4)
+[75033.413889] scsi target0:0:2: enclosure_logical_id(0x500605b00963c4c0), slot(7)
+[75033.413903] sd 0:0:2:0: task abort: SUCCESS scmd(ffff88047376e800)
+[75037.768004] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[75044.483007] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[75319.194404] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[75398.687343] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[75449.319028] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[75459.036059] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[75489.783064] sd 0:0:2:0: attempting task abort! scmd(ffff88081c36ce40)
+[75489.783070] sd 0:0:2:0: [sdi] CDB: 
+[75489.783073] Read(16): 88 00 00 00 00 00 02 1b 84 10 00 00 04 00 00 00
+[75489.783088] scsi target0:0:2: handle(0x000b), sas_address(0x4433221104000000), phy(4)
+[75489.783091] scsi target0:0:2: enclosure_logical_id(0x500605b00963c4c0), slot(7)
+[75489.833538] sd 0:0:2:0: task abort: SUCCESS scmd(ffff88081c36ce40)
+[75489.833556] sd 0:0:2:0: attempting task abort! scmd(ffff88032ed300c0)
+[75489.833559] sd 0:0:2:0: [sdi] CDB: 
+[75489.833561] Read(16): 88 00 00 00 00 00 02 1b 62 a8 00 00 00 48 00 00
+[75489.833575] scsi target0:0:2: handle(0x000b), sas_address(0x4433221104000000), phy(4)
+[75489.833578] scsi target0:0:2: enclosure_logical_id(0x500605b00963c4c0), slot(7)
+[75489.833592] sd 0:0:2:0: task abort: SUCCESS scmd(ffff88032ed300c0)
+[75491.767163] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[75494.993622] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[75528.304170] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[75539.348662] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[75570.806198] sd 0:0:1:0: attempting task abort! scmd(ffff8803238ea680)
+[75570.806205] sd 0:0:1:0: [sdh] CDB: 
+[75570.806207] Read(16): 88 00 00 00 00 00 02 1b f4 10 00 00 04 00 00 00
+[75570.806223] scsi target0:0:1: handle(0x0009), sas_address(0x4433221102000000), phy(2)
+[75570.806226] scsi target0:0:1: enclosure_logical_id(0x500605b00963c4c0), slot(1)
+[75570.856687] sd 0:0:1:0: task abort: SUCCESS scmd(ffff8803238ea680)
+[75570.856705] sd 0:0:1:0: attempting task abort! scmd(ffff88032ed30240)
+[75570.856708] sd 0:0:1:0: [sdh] CDB: 
+[75570.856709] Read(16): 88 00 00 00 00 00 02 1b f8 10 00 00 04 00 00 00
+[75570.856723] scsi target0:0:1: handle(0x0009), sas_address(0x4433221102000000), phy(2)
+[75570.856726] scsi target0:0:1: enclosure_logical_id(0x500605b00963c4c0), slot(1)
+[75570.856740] sd 0:0:1:0: task abort: SUCCESS scmd(ffff88032ed30240)
+[75572.198990] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[75573.517914] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[75575.868311] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[75589.909087] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[75649.210271] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[75690.867733] sd 0:0:0:0: attempting task abort! scmd(ffff88085a5d2940)
+[75690.867740] sd 0:0:0:0: [sdg] CDB: 
+[75690.867742] Read(16): 88 00 00 00 00 00 02 1c 74 10 00 00 04 00 00 00
+[75690.867757] scsi target0:0:0: handle(0x000a), sas_address(0x4433221103000000), phy(3)
+[75690.867760] scsi target0:0:0: enclosure_logical_id(0x500605b00963c4c0), slot(0)
+[75690.918312] sd 0:0:0:0: task abort: SUCCESS scmd(ffff88085a5d2940)
+[75690.918322] sd 0:0:0:0: attempting task abort! scmd(ffff88066cd24080)
+[75690.918325] sd 0:0:0:0: [sdg] CDB: 
+[75690.918327] Read(16): 88 00 00 00 00 00 02 1c 78 10 00 00 04 00 00 00
+[75690.918342] scsi target0:0:0: handle(0x000a), sas_address(0x4433221103000000), phy(3)
+[75690.918345] scsi target0:0:0: enclosure_logical_id(0x500605b00963c4c0), slot(0)
+[75690.918360] sd 0:0:0:0: task abort: SUCCESS scmd(ffff88066cd24080)
+[75695.441844] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[75695.705473] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[75699.965879] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[75724.314041] mpt2sas0: log_info(0x31110630): originator(PL), code(0x11), sub_code(0x0630)
+[75772.162359] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[75810.956457] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[75821.914582] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[75903.468321] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[75927.549009] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[76201.257208] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[76298.203874] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[76369.670953] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[76396.481149] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[76476.500866] sd 0:0:3:0: [sdj]  
+[76476.500872] Result: hostbyte=DID_OK driverbyte=DRIVER_SENSE
+[76476.500875] sd 0:0:3:0: [sdj]  
+[76476.500877] Sense Key : Aborted Command [current] 
+[76476.500881] sd 0:0:3:0: [sdj]  
+[76476.500885] Add. Sense: Information unit iuCRC error detected
+[76476.500888] sd 0:0:3:0: [sdj] CDB: 
+[76476.500890] Read(16): 88 00 00 00 00 00 94 9e a0 10 00 00 02 00 00 00
+[76476.500902] end_request: I/O error, dev sdj, sector 2493423632
+[76511.169669] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[76511.175904] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[76589.736307] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[76645.384189] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[76836.752902] sd 0:0:4:0: attempting task abort! scmd(ffff88052f8a0500)
+[76836.752908] sd 0:0:4:0: [sdk] CDB: 
+[76836.752911] Read(16): 88 00 00 00 00 00 94 d7 2e 18 00 00 01 f8 00 00
+[76836.752926] scsi target0:0:4: handle(0x000d), sas_address(0x4433221106000000), phy(6)
+[76836.752929] scsi target0:0:4: enclosure_logical_id(0x500605b00963c4c0), slot(5)
+[76836.803446] sd 0:0:4:0: task abort: SUCCESS scmd(ffff88052f8a0500)
+[76839.076269] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[76945.973071] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[77104.577799] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[77219.935405] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[77249.009798] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[77269.012232] mpt2sas0: log_info(0x31110630): originator(PL), code(0x11), sub_code(0x0630)
+[77275.598428] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[77392.042136] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[77429.345290] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[77865.331128] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[77909.578859] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[77981.864464] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[78020.715782] sd 0:0:1:0: attempting task abort! scmd(ffff88085b7f41c0)
+[78020.715793] sd 0:0:1:0: [sdh] CDB: 
+[78020.715795] Read(16): 88 00 00 00 00 00 02 1e cc 10 00 00 04 00 00 00
+[78020.715810] scsi target0:0:1: handle(0x0009), sas_address(0x4433221102000000), phy(2)
+[78020.715814] scsi target0:0:1: enclosure_logical_id(0x500605b00963c4c0), slot(1)
+[78020.766368] sd 0:0:1:0: task abort: SUCCESS scmd(ffff88085b7f41c0)
+[78020.766380] sd 0:0:1:0: attempting task abort! scmd(ffff8804c966c380)
+[78020.766383] sd 0:0:1:0: [sdh] CDB: 
+[78020.766385] Read(16): 88 00 00 00 00 00 02 1e d0 10 00 00 04 00 00 00
+[78020.766399] scsi target0:0:1: handle(0x0009), sas_address(0x4433221102000000), phy(2)
+[78020.766402] scsi target0:0:1: enclosure_logical_id(0x500605b00963c4c0), slot(1)
+[78020.766417] sd 0:0:1:0: task abort: SUCCESS scmd(ffff8804c966c380)
+[78023.356511] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[78042.204796] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[78136.984301] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[78136.995952] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[78221.896543] sd 0:0:0:0: attempting task abort! scmd(ffff88074ed47e40)
+[78221.896549] sd 0:0:0:0: [sdg] CDB: 
+[78221.896552] Read(16): 88 00 00 00 00 00 95 c4 7f 30 00 00 00 e0 00 00
+[78221.896567] scsi target0:0:0: handle(0x000a), sas_address(0x4433221103000000), phy(3)
+[78221.896570] scsi target0:0:0: enclosure_logical_id(0x500605b00963c4c0), slot(0)
+[78221.947096] sd 0:0:0:0: task abort: SUCCESS scmd(ffff88074ed47e40)
+[78224.609000] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[78225.794904] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[78226.718705] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[78320.561371] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[78328.494634] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[78334.575421] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[78336.047615] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[78336.047633] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[78336.054311] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[78336.062728] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[78336.070509] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[78336.070544] sd 0:0:0:0: [sdg]  
+[78336.070554] Result: hostbyte=DID_OK driverbyte=DRIVER_SENSE
+[78336.070560] sd 0:0:0:0: [sdg]  
+[78336.070562] Sense Key : Aborted Command [current] 
+[78336.070566] sd 0:0:0:0: [sdg]  
+[78336.070570] Add. Sense: Information unit iuCRC error detected
+[78336.070573] sd 0:0:0:0: [sdg] CDB: 
+[78336.070575] Read(16): 88 00 00 00 00 00 95 db fc 10 00 00 04 00 00 00
+[78336.070613] end_request: I/O error, dev sdg, sector 2514222096
+[78428.401040] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[78552.137991] sd 0:0:2:0: attempting task abort! scmd(ffff88085a5d2ac0)
+[78552.137997] sd 0:0:2:0: [sdi] CDB: 
+[78552.138000] Read(16): 88 00 00 00 00 00 95 fb dc 10 00 00 03 d8 00 00
+[78552.138015] scsi target0:0:2: handle(0x000b), sas_address(0x4433221104000000), phy(4)
+[78552.138018] scsi target0:0:2: enclosure_logical_id(0x500605b00963c4c0), slot(7)
+[78552.188589] sd 0:0:2:0: task abort: SUCCESS scmd(ffff88085a5d2ac0)
+[78552.188607] sd 0:0:2:0: attempting task abort! scmd(ffff88052f8a0e00)
+[78552.188610] sd 0:0:2:0: [sdi] CDB: 
+[78552.188612] Read(16): 88 00 00 00 00 00 95 fb df e8 00 00 00 28 00 00
+[78552.188626] scsi target0:0:2: handle(0x000b), sas_address(0x4433221104000000), phy(4)
+[78552.188629] scsi target0:0:2: enclosure_logical_id(0x500605b00963c4c0), slot(7)
+[78552.188644] sd 0:0:2:0: task abort: SUCCESS scmd(ffff88052f8a0e00)
+[78713.287659] sd 0:0:3:0: attempting task abort! scmd(ffff88074eda9680)
+[78713.287666] sd 0:0:3:0: [sdj] CDB: 
+[78713.287668] Read(16): 88 00 00 00 00 00 02 1f 74 10 00 00 04 00 00 00
+[78713.287684] scsi target0:0:3: handle(0x000c), sas_address(0x4433221105000000), phy(5)
+[78713.287687] scsi target0:0:3: enclosure_logical_id(0x500605b00963c4c0), slot(6)
+[78713.338216] sd 0:0:3:0: task abort: SUCCESS scmd(ffff88074eda9680)
+[78713.338228] sd 0:0:3:0: attempting task abort! scmd(ffff88064fc521c0)
+[78713.338231] sd 0:0:3:0: [sdj] CDB: 
+[78713.338233] Read(16): 88 00 00 00 00 00 02 1f 78 10 00 00 04 00 00 00
+[78713.338247] scsi target0:0:3: handle(0x000c), sas_address(0x4433221105000000), phy(5)
+[78713.338251] scsi target0:0:3: enclosure_logical_id(0x500605b00963c4c0), slot(6)
+[78713.338265] sd 0:0:3:0: task abort: SUCCESS scmd(ffff88064fc521c0)
+[78715.203812] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[78715.210145] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[78718.342909] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[78834.341952] sd 0:0:3:0: attempting task abort! scmd(ffff8803a46ca040)
+[78834.341958] sd 0:0:3:0: [sdj] CDB: 
+[78834.341961] Read(16): 88 00 00 00 00 00 96 2c 54 10 00 00 04 00 00 00
+[78834.341975] scsi target0:0:3: handle(0x000c), sas_address(0x4433221105000000), phy(5)
+[78834.341978] scsi target0:0:3: enclosure_logical_id(0x500605b00963c4c0), slot(6)
+[78834.392462] sd 0:0:3:0: task abort: SUCCESS scmd(ffff8803a46ca040)
+[78834.392479] sd 0:0:3:0: attempting task abort! scmd(ffff88052f8a0c80)
+[78834.392482] sd 0:0:3:0: [sdj] CDB: 
+[78834.392484] Read(16): 88 00 00 00 00 00 96 2c 58 10 00 00 01 f8 00 00
+[78834.392498] scsi target0:0:3: handle(0x000c), sas_address(0x4433221105000000), phy(5)
+[78834.392501] scsi target0:0:3: enclosure_logical_id(0x500605b00963c4c0), slot(6)
+[78834.392515] sd 0:0:3:0: task abort: SUCCESS scmd(ffff88052f8a0c80)
+[78839.127754] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[78907.712271] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[78965.388103] sd 0:0:0:0: attempting task abort! scmd(ffff88085b24f800)
+[78965.388110] sd 0:0:0:0: [sdg] CDB: 
+[78965.388112] Read(16): 88 00 00 00 00 00 96 40 54 10 00 00 04 00 00 00
+[78965.388127] scsi target0:0:0: handle(0x000a), sas_address(0x4433221103000000), phy(3)
+[78965.388130] scsi target0:0:0: enclosure_logical_id(0x500605b00963c4c0), slot(0)
+[78965.438616] sd 0:0:0:0: task abort: SUCCESS scmd(ffff88085b24f800)
+[78970.803674] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[78980.830250] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[79022.483325] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[79052.091013] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[79148.483628] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[79168.991005] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[79206.600114] sd 0:0:0:0: attempting task abort! scmd(ffff8801ead6e4c0)
+[79206.600120] sd 0:0:0:0: [sdg] CDB: 
+[79206.600123] Read(16): 88 00 00 00 00 00 96 65 30 10 00 00 04 00 00 00
+[79206.600138] scsi target0:0:0: handle(0x000a), sas_address(0x4433221103000000), phy(3)
+[79206.600141] scsi target0:0:0: enclosure_logical_id(0x500605b00963c4c0), slot(0)
+[79206.650651] sd 0:0:0:0: task abort: SUCCESS scmd(ffff8801ead6e4c0)
+[79218.407308] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[79283.716210] sd 0:0:0:0: attempting task abort! scmd(ffff88074ec04980)
+[79283.716217] sd 0:0:0:0: [sdg] CDB: 
+[79283.716219] Read(16): 88 00 00 00 00 00 96 70 4f b8 00 00 00 58 00 00
+[79283.716234] scsi target0:0:0: handle(0x000a), sas_address(0x4433221103000000), phy(3)
+[79283.716237] scsi target0:0:0: enclosure_logical_id(0x500605b00963c4c0), slot(0)
+[79283.766821] sd 0:0:0:0: task abort: SUCCESS scmd(ffff88074ec04980)
+[79317.069267] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[79708.945649] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[79796.967600] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[79890.552498] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[79922.017202] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[80079.180032] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[80148.226743] sd 0:0:2:0: [sdi]  
+[80148.226748] Result: hostbyte=DID_OK driverbyte=DRIVER_SENSE
+[80148.226751] sd 0:0:2:0: [sdi]  
+[80148.226754] Sense Key : Aborted Command [current] 
+[80148.226758] sd 0:0:2:0: [sdi]  
+[80148.226762] Add. Sense: Information unit iuCRC error detected
+[80148.226765] sd 0:0:2:0: [sdi] CDB: 
+[80148.226767] Read(16): 88 00 00 00 00 00 96 fb e6 18 00 00 01 f8 00 00
+[80148.226779] end_request: I/O error, dev sdi, sector 2533090840
+[80216.134143] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[80351.834514] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[80355.291729] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[80469.046589] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[80469.053157] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[80469.060788] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[80469.068952] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[80469.076926] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[80469.076954] sd 0:0:3:0: [sdj]  
+[80469.076959] Result: hostbyte=DID_OK driverbyte=DRIVER_SENSE
+[80469.076963] sd 0:0:3:0: [sdj]  
+[80469.076966] Sense Key : Aborted Command [current] 
+[80469.076971] sd 0:0:3:0: [sdj]  
+[80469.076977] Add. Sense: Information unit iuCRC error detected
+[80469.076985] sd 0:0:3:0: [sdj] CDB: 
+[80469.076988] Read(16): 88 00 00 00 00 00 97 2f d4 10 00 00 04 00 00 00
+[80469.077005] end_request: I/O error, dev sdj, sector 2536494096
+[80475.258606] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[80483.531102] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[80554.437261] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[80578.913118] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[80734.693968] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[80853.544323] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[80853.562109] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[80916.611365] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[81098.058418] sd 0:0:4:0: attempting task abort! scmd(ffff88074ece2e00)
+[81098.058436] sd 0:0:4:0: [sdk] CDB: 
+[81098.058438] Read(16): 88 00 00 00 00 00 97 90 64 10 00 00 04 00 00 00
+[81098.058452] scsi target0:0:4: handle(0x000d), sas_address(0x4433221106000000), phy(6)
+[81098.058455] scsi target0:0:4: enclosure_logical_id(0x500605b00963c4c0), slot(5)
+[81098.108985] sd 0:0:4:0: task abort: SUCCESS scmd(ffff88074ece2e00)
+[81098.108996] sd 0:0:4:0: attempting task abort! scmd(ffff88074ec04e00)
+[81098.109000] sd 0:0:4:0: [sdk] CDB: 
+[81098.109001] Read(16): 88 00 00 00 00 00 97 90 68 10 00 00 04 00 00 00
+[81098.109016] scsi target0:0:4: handle(0x000d), sas_address(0x4433221106000000), phy(6)
+[81098.109019] scsi target0:0:4: enclosure_logical_id(0x500605b00963c4c0), slot(5)
+[81098.109033] sd 0:0:4:0: task abort: SUCCESS scmd(ffff88074ec04e00)
+[81107.790910] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[81108.059152] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[81109.188304] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[81132.426556] mpt2sas0: log_info(0x31110630): originator(PL), code(0x11), sub_code(0x0630)
+[81196.623819] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[81460.325270] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[81514.374524] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[81541.866422] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[81695.642892] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[81898.834678] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[82018.250312] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[82089.871482] sd 0:0:4:0: attempting task abort! scmd(ffff8806611b5980)
+[82089.871488] sd 0:0:4:0: [sdk] CDB: 
+[82089.871491] Read(16): 88 00 00 00 00 00 98 2d d8 10 00 00 04 00 00 00
+[82089.871506] scsi target0:0:4: handle(0x000d), sas_address(0x4433221106000000), phy(6)
+[82089.871509] scsi target0:0:4: enclosure_logical_id(0x500605b00963c4c0), slot(5)
+[82089.922047] sd 0:0:4:0: task abort: SUCCESS scmd(ffff8806611b5980)
+[82124.906787] sd 0:0:1:0: attempting task abort! scmd(ffff8807e9d76500)
+[82124.906793] sd 0:0:1:0: [sdh] CDB: 
+[82124.906796] Read(16): 88 00 00 00 00 00 98 31 20 10 00 00 00 e8 00 00
+[82124.906811] scsi target0:0:1: handle(0x0009), sas_address(0x4433221102000000), phy(2)
+[82124.906814] scsi target0:0:1: enclosure_logical_id(0x500605b00963c4c0), slot(1)
+[82124.957199] sd 0:0:1:0: task abort: SUCCESS scmd(ffff8807e9d76500)
+[82124.957212] sd 0:0:3:0: attempting task abort! scmd(ffff8808137d8c80)
+[82124.957215] sd 0:0:3:0: [sdj] CDB: 
+[82124.957217] Read(16): 88 00 00 00 00 00 98 31 1e 80 00 00 01 90 00 00
+[82124.957233] scsi target0:0:3: handle(0x000c), sas_address(0x4433221105000000), phy(5)
+[82124.957236] scsi target0:0:3: enclosure_logical_id(0x500605b00963c4c0), slot(6)
+[82125.007658] sd 0:0:3:0: task abort: SUCCESS scmd(ffff8808137d8c80)
+[82126.207366] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[82126.216339] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[82128.537027] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[82129.223513] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[82132.886271] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[82133.475440] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[82133.475451] sd 0:0:1:0: [sdh] Unhandled error code
+[82133.475454] sd 0:0:1:0: [sdh]  
+[82133.475456] Result: hostbyte=DID_SOFT_ERROR driverbyte=DRIVER_OK
+[82133.475458] sd 0:0:1:0: [sdh] CDB: 
+[82133.475460] Read(16): 88 00 00 00 00 00 87 4c e0 10 00 00 00 08 00 00
+[82133.475470] end_request: I/O error, dev sdh, sector 2269962256
+[82133.604247] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[82253.785858] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[82274.218921] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[82347.455528] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[82538.808924] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[82693.852469] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[82725.485052] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[82732.131489] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[82733.059607] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[82878.454148] sd 0:0:3:0: attempting task abort! scmd(ffff88085ab81380)
+[82878.454154] sd 0:0:3:0: [sdj] CDB: 
+[82878.454157] Read(16): 88 00 00 00 00 00 98 ac 58 38 00 00 03 d8 00 00
+[82878.454172] scsi target0:0:3: handle(0x000c), sas_address(0x4433221105000000), phy(5)
+[82878.454175] scsi target0:0:3: enclosure_logical_id(0x500605b00963c4c0), slot(6)
+[82878.504723] sd 0:0:3:0: task abort: SUCCESS scmd(ffff88085ab81380)
+[82878.504734] sd 0:0:3:0: attempting task abort! scmd(ffff88074ed7a980)
+[82878.504737] sd 0:0:3:0: [sdj] CDB: 
+[82878.504739] Read(16): 88 00 00 00 00 00 98 ac 5c 10 00 00 04 00 00 00
+[82878.504752] scsi target0:0:3: handle(0x000c), sas_address(0x4433221105000000), phy(5)
+[82878.504755] scsi target0:0:3: enclosure_logical_id(0x500605b00963c4c0), slot(6)
+[82878.504769] sd 0:0:3:0: task abort: SUCCESS scmd(ffff88074ed7a980)
+[82886.516282] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[82955.887342] sd 0:0:4:0: [sdk]  
+[82955.887367] Result: hostbyte=DID_OK driverbyte=DRIVER_SENSE
+[82955.887371] sd 0:0:4:0: [sdk]  
+[82955.887374] Sense Key : Aborted Command [current] 
+[82955.887380] sd 0:0:4:0: [sdk]  
+[82955.887385] Add. Sense: Information unit iuCRC error detected
+[82955.887389] sd 0:0:4:0: [sdk] CDB: 
+[82955.887392] Read(16): 88 00 00 00 00 00 98 be 90 10 00 00 02 00 00 00
+[82955.887405] end_request: I/O error, dev sdk, sector 2562625552
+[82955.888281] sd 0:0:1:0: [sdh]  
+[82955.888286] Result: hostbyte=DID_OK driverbyte=DRIVER_SENSE
+[82955.888289] sd 0:0:1:0: [sdh]  
+[82955.888292] Sense Key : Aborted Command [current] 
+[82955.888296] sd 0:0:1:0: [sdh]  
+[82955.888300] Add. Sense: Information unit iuCRC error detected
+[82955.888304] sd 0:0:1:0: [sdh] CDB: 
+[82955.888306] Read(16): 88 00 00 00 00 00 98 be 92 10 00 00 02 00 00 00
+[82955.888318] end_request: I/O error, dev sdh, sector 2562626064
+[83088.418285] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[83144.884914] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[83157.941887] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[83270.355858] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[83541.810460] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[83566.027964] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[83674.566995] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[83754.149399] sd 0:0:1:0: [sdh]  
+[83754.149404] Result: hostbyte=DID_OK driverbyte=DRIVER_SENSE
+[83754.149407] sd 0:0:1:0: [sdh]  
+[83754.149410] Sense Key : Aborted Command [current] 
+[83754.149414] sd 0:0:1:0: [sdh]  
+[83754.149418] Add. Sense: Information unit iuCRC error detected
+[83754.149420] sd 0:0:1:0: [sdh] CDB: 
+[83754.149422] Read(16): 88 00 00 00 00 00 99 41 a8 10 00 00 04 00 00 00
+[83754.149435] end_request: I/O error, dev sdh, sector 2571216912
+[83771.642398] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[84089.613035] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[84089.619548] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[84089.627295] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[84502.351433] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[84512.029857] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[84698.251752] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[84708.659679] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[84790.984814] sd 0:0:1:0: attempting task abort! scmd(ffff88047d950500)
+[84790.984821] sd 0:0:1:0: [sdh] CDB: 
+[84790.984823] Read(16): 88 00 00 00 00 00 99 db 7e f0 00 00 01 20 00 00
+[84790.984837] scsi target0:0:1: handle(0x0009), sas_address(0x4433221102000000), phy(2)
+[84790.984840] scsi target0:0:1: enclosure_logical_id(0x500605b00963c4c0), slot(1)
+[84791.035376] sd 0:0:1:0: task abort: SUCCESS scmd(ffff88047d950500)
+[84792.204102] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[84877.803564] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[87137.637927] EXT4-fs (md127p1): error count since last fsck: 6
+[87137.637941] EXT4-fs (md127p1): initial error at time 1427223364: ext4_journal_check_start:56
+[87137.637945] EXT4-fs (md127p1): last error at time 1427225342: ext4_put_super:790
+[146426.146266] md: md126: recovery done.
+[146426.216548] RAID conf printout:
+[146426.216553]  --- level:6 rd:8 wd:8
+[146426.216556]  disk 0, o:1, dev:sda1
+[146426.216558]  disk 1, o:1, dev:sdb1
+[146426.216560]  disk 2, o:1, dev:sdc1
+[146426.216562]  disk 3, o:1, dev:sdd1
+[146426.216564]  disk 4, o:1, dev:sde1
+[146426.216565]  disk 5, o:1, dev:sdf1
+[146426.216567]  disk 6, o:1, dev:sdn1
+[146426.216569]  disk 7, o:1, dev:sdm1
+[146426.249986] md: resync of RAID array md126
+[146426.249991] md: minimum _guaranteed_  speed: 1000 KB/sec/disk.
+[146426.249994] md: using maximum available idle IO bandwidth (but not more than 200000 KB/sec) for resync.
+[146426.250003] md: using 128k window, over a total of 3906882560k.
+[146426.250092] md: md126: resync done.
+[146426.283256] RAID conf printout:
+[146426.283261]  --- level:6 rd:8 wd:8
+[146426.283264]  disk 0, o:1, dev:sda1
+[146426.283266]  disk 1, o:1, dev:sdb1
+[146426.283268]  disk 2, o:1, dev:sdc1
+[146426.283270]  disk 3, o:1, dev:sdd1
+[146426.283271]  disk 4, o:1, dev:sde1
+[146426.283273]  disk 5, o:1, dev:sdf1
+[146426.283275]  disk 6, o:1, dev:sdn1
+[146426.283277]  disk 7, o:1, dev:sdm1
+[171346.116857] UDP: bad checksum. From 134.155.84.66:65469 to 224.0.0.1:1337 ulen 55
+[171766.470373] UDP: bad checksum. From 134.155.84.66:65469 to 224.0.0.1:1337 ulen 55
+[173712.638733] EXT4-fs (md127p1): error count since last fsck: 6
+[173712.638746] EXT4-fs (md127p1): initial error at time 1427223364: ext4_journal_check_start:56
+[173712.638752] EXT4-fs (md127p1): last error at time 1427225342: ext4_put_super:790
+[173738.207077] UDP: bad checksum. From 134.155.84.66:65469 to 224.0.0.1:1337 ulen 55
+[174148.568995] UDP: bad checksum. From 134.155.84.66:65469 to 224.0.0.1:1337 ulen 55
+[176270.379785] UDP: bad checksum. From 134.155.84.66:65469 to 224.0.0.1:1337 ulen 55
+[177501.447803] UDP: bad checksum. From 134.155.84.66:65469 to 224.0.0.1:1337 ulen 55
+[181640.625985] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[181642.957322] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[181642.977025] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[181644.114778] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[181647.401960] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[181650.973249] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[181651.541391] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[181652.886000] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[181654.779022] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[181658.276185] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[181658.934958] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[181662.552347] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[181664.359652] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[181665.631507] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[181670.236608] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[181678.040833] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[181683.006818] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[181684.046831] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[181687.698425] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[181689.998811] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[181702.156325] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[181712.288225] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[181714.536581] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[181717.372128] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[181912.703530] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[181978.742158] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[182004.038475] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[182037.488644] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[182161.477996] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
