@@ -194,7 +194,7 @@ md127 : active raid6 sdi1[9] sdd1[8] sdc1[7] sdb1[6] sda1[5] sdh1[4] sdg1[2] sde
 
 ## 2015-07-30
 
-* Raid reformat finishes
+* RAID rebuilt, drive failed
 ````
 ldietz@wifo3-02:~$ cat /proc/mdstat
 Personalities : [raid0] [raid6] [raid5] [raid4] 
@@ -207,4 +207,53 @@ md127 : active raid0 sdh1[0] sdj1[4] sdi1[3] sdg1[2] sdk1[1]
       
 unused devices: <none>
 ````
+* suspecting issues with new LSI controller , [see blog](http://blog.disksurvey.org/blog/2014/03/27/sata-handling-of-medium-errors-log-info-0x0x31080000/)
 
+* removed drive /dev/sdl1 and readded as spare
+````
+ sudo madm /dev/md/lemons --remove /dev/sdl1
+
+ sudo mdadm --manage --add /dev/md/lemons /dev/sdl1
+````
+
+ 
+* ldietz@wifo3-02:~/wifo3-2$ sudo sudo mdadm --detail /dev/md/lemons
+````
+/dev/md/lemons:
+        Version : 1.2
+  Creation Time : Tue Jul 28 12:24:38 2015
+     Raid Level : raid6
+     Array Size : 23441295360 (22355.36 GiB 24003.89 GB)
+  Used Dev Size : 3906882560 (3725.89 GiB 4000.65 GB)
+   Raid Devices : 8
+  Total Devices : 9
+    Persistence : Superblock is persistent
+
+  Intent Bitmap : Internal
+
+    Update Time : Thu Jul 30 13:51:58 2015
+          State : active 
+ Active Devices : 8
+Working Devices : 9
+ Failed Devices : 0
+  Spare Devices : 1
+
+         Layout : left-symmetric
+     Chunk Size : 512K
+
+           Name : wifo3-02:lemons  (local to host wifo3-02)
+           UUID : 116751fa:df64959f:cb3098a9:17f4e326
+         Events : 24801
+
+    Number   Major   Minor   RaidDevice State
+       0       8        1        0      active sync   /dev/sda1
+       1       8       17        1      active sync   /dev/sdb1
+       2       8       33        2      active sync   /dev/sdc1
+       3       8       49        3      active sync   /dev/sdd1
+       4       8       65        4      active sync   /dev/sde1
+       5       8       81        5      active sync   /dev/sdf1
+       8       8      209        6      active sync   /dev/sdn1
+       7       8      193        7      active sync   /dev/sdm1
+
+       9       8      177        -      spare   /dev/sdl1
+```
