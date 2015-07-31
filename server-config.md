@@ -23,6 +23,14 @@ LSI SAS 2008
 | Bottom  | R2C* |
 
 
+|      |         |              |             |
+|------|---------|--------------|-------------|
+|Slot0 | lemons  | ST3000VN000  | Z31004EY    |
+|Slot1 | lemons  | ST3000VN000  | Z3100EJJ    |
+|Slot4 | peaches | WDC WD40EFRX68W  | WDWCC4E7ARPUY0 |
+|Slot5 | lemons  | ST3000VN000  | ST3100EQJ   |
+|Slot6 | lemons  | ST3000VN000  | ST3100DCL   |
+|Slot7 | lemons  | ST3000VN000  | ST3100FIV   |
 
 
 # Bay layout
