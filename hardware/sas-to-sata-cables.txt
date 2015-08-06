@@ -23,4 +23,19 @@ All SAS connectors have their pins structured the same way no matter if they are
 
 A SAS to SAS cable must therefore be a "cross over" cable to connect the transmit pairs of a port to the receive pairs of the corresponding port on the other side.
 
-Hope that helps clear up the mystery. 
+Hope that helps clear up the mystery.
+
+
+
+
+
+
+Further reading
+
+https://serverfault.com/questions/410512/are-there-different-kinds-of-mini-sas-to-4x-sata-reverse-breakout-cables
+
+http://www.techcable.com/HTML/SFF-8087-cables.htm
+
+
+
+ 
