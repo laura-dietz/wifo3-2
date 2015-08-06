@@ -17,12 +17,24 @@ wifo3-2 Config
 
 LSI SAS 2008
 
+- SN SP51115003
+- H5-25249-01K
+- P/N LSI00194
+
 |         |      |
 |---------|------|
 | Top     | R3C* |
 | Bottom  | R2C* |
 
 
+|      |         |              |             |
+|------|---------|--------------|-------------|
+|Slot0 | lemons  | ST3000VN000  | Z31004EY    |
+|Slot1 | lemons  | ST3000VN000  | Z3100EJJ    |
+|Slot4 | peaches | WDC WD40EFRX68W  | WDWCC4E7ARPUY0 |
+|Slot5 | lemons  | ST3000VN000  | ST3100EQJ   |
+|Slot6 | lemons  | ST3000VN000  | ST3100DCL   |
+|Slot7 | lemons  | ST3000VN000  | ST3100FIV   |
 
 
 # Bay layout
@@ -63,23 +75,26 @@ Raw: 32TB + spare
 Raid6: 24TB
 
 
-Bonnie++ Benchmark
-==================
+Bonnie++ Benchmarks
+=====================
 
-```
+````
+
 Version  1.97       ------Sequential Output------ --Sequential Input- --Random-
 Concurrency   1     -Per Chr- --Block-- -Rewrite- -Per Chr- --Block-- --Seeks--
 Machine        Size K/sec %CP K/sec %CP K/sec %CP K/sec %CP K/sec %CP  /sec %CP
-wifo3-02        63G  1905  91 364656  24 119264  12  3457  86 306391  14 439.5  17
-Latency              8631us   18055us     184ms   23985us   57565us   83422us
+wifo3-02        63G  1842  89 347029  24 175829  17  3404  89 495890  20 447.9  11
+Latency              8735us   16764us   79061us   18280us   32499us     228ms
 Version  1.97       ------Sequential Create------ --------Random Create--------
 wifo3-02            -Create-- --Read--- -Delete-- -Create-- --Read--- -Delete--
               files  /sec %CP  /sec %CP  /sec %CP  /sec %CP  /sec %CP  /sec %CP
-                 16  8891  13 +++++ +++ 17536  23 11535  17 +++++ +++ 19876  28
-Latency               391us     125us     128us     375us      20us      90us
-1.97,1.97,wifo3-02,1,1438076799,63G,,1905,91,364656,24,119264,12,3457,86,306391,14,439.5,17,16,,,,,8891,13,+++++,+++,17536,23,11535,17,+++++,+++,19876,28,8631us,18055us,184ms,23985us,57565us,83422us,391us,125us,128us,375us,20us,90us
-l
-```
+                 16  7555  17 +++++ +++ 18185  27  7097  12 +++++ +++ 11216  21
+Latency               349ms     127us   12376us     382ms      14us     490ms
+1.97,1.97,wifo3-02,1,1438369124,63G,,1842,89,347029,24,175829,17,3404,89,495890,20,447.9,11,16,,,,,7555,17,+++++,+++,18185,27,7097,12,+++++,+++,11216,21,8735us,16764us,79061us,18280us,32499us,228ms,349ms,127us,12376us,382ms,14us,490ms
+bonnie (END)
+````
+
+
 
 History
 ===========
@@ -187,6 +202,24 @@ md127 : active raid6 sdi1[9] sdd1[8] sdc1[7] sdb1[6] sda1[5] sdh1[4] sdg1[2] sde
    ```
    $ sudo mkfs.xfs /dev/md/lemons1 
    ```
+* Bonnie ++ (while rebuilding RAID6)
+
+```
+Version  1.97       ------Sequential Output------ --Sequential Input- --Random-
+Concurrency   1     -Per Chr- --Block-- -Rewrite- -Per Chr- --Block-- --Seeks--
+Machine        Size K/sec %CP K/sec %CP K/sec %CP K/sec %CP K/sec %CP  /sec %CP
+wifo3-02        63G  1905  91 364656  24 119264  12  3457  86 306391  14 439.5  17
+Latency              8631us   18055us     184ms   23985us   57565us   83422us
+Version  1.97       ------Sequential Create------ --------Random Create--------
+wifo3-02            -Create-- --Read--- -Delete-- -Create-- --Read--- -Delete--
+              files  /sec %CP  /sec %CP  /sec %CP  /sec %CP  /sec %CP  /sec %CP
+                 16  8891  13 +++++ +++ 17536  23 11535  17 +++++ +++ 19876  28
+Latency               391us     125us     128us     375us      20us      90us
+1.97,1.97,wifo3-02,1,1438076799,63G,,1905,91,364656,24,119264,12,3457,86,306391,14,439.5,17,16,,,,,8891,13,+++++,+++,17536,23,11535,17,+++++,+++,19876,28,8631us,18055us,184ms,23985us,57565us,83422us,391us,125us,128us,375us,20us,90us
+l
+```
+
+
  * Copy peaches to lemons,
    ```
    $ rsync -a /mnt/peaches /mnt/lemons/peaches --info=progress2
@@ -257,3 +290,23 @@ Working Devices : 9
 
        9       8      177        -      spare   /dev/sdl1
 ```
+## 2015-07-31
+
+* reseating cables and drives. trying to reproduce drive error
+
+* Bonnie++ (without rebuilding RAID)
+
+````
+Version  1.97       ------Sequential Output------ --Sequential Input- --Random-
+Concurrency   1     -Per Chr- --Block-- -Rewrite- -Per Chr- --Block-- --Seeks--
+Machine        Size K/sec %CP K/sec %CP K/sec %CP K/sec %CP K/sec %CP  /sec %CP
+wifo3-02        63G  1842  89 347029  24 175829  17  3404  89 495890  20 447.9  11
+Latency              8735us   16764us   79061us   18280us   32499us     228ms
+Version  1.97       ------Sequential Create------ --------Random Create--------
+wifo3-02            -Create-- --Read--- -Delete-- -Create-- --Read--- -Delete--
+              files  /sec %CP  /sec %CP  /sec %CP  /sec %CP  /sec %CP  /sec %CP
+                 16  7555  17 +++++ +++ 18185  27  7097  12 +++++ +++ 11216  21
+Latency               349ms     127us   12376us     382ms      14us     490ms
+1.97,1.97,wifo3-02,1,1438369124,63G,,1842,89,347029,24,175829,17,3404,89,495890,20,447.9,11,16,,,,,7555,17,+++++,+++,18185,27,7097,12,+++++,+++,11216,21,8735us,16764us,79061us,18280us,32499us,228ms,349ms,127us,12376us,382ms,14us,490ms
+bonnie (END)
+````
