@@ -1,0 +1,26 @@
+We need reverse cables!
+
+
+http://lime-technology.com/forum/index.php?topic=7003.0
+
+There have been many posts involving SAS to SATA breakout cables of the Forward vs Reverse types.  Which type to use where is generally the question.
+
+To make it simple, if the host-controller side is a SAS connector (SFF-8470) and the target side is SATA drives then you must always use a SAS to SATA Forward Breakout Cable.  If The Motherboard/host-Controller side are SATA connectors and the backplane is a SAS connector then you must always use a SAS to SATA Reverse Breakout Cable.  For SATA to SATA you just use a "SATA" cable as there is only one type, although they do come in different lengths. For SAS to SAS connections there is also just a single cable type.
+
+The two breakout cables, forward and reverse,  are not the same although they look outwardly to be the same, not withstanding the fact that some of these cables have the SATA portion of the cables at staggered lengths and some have them at fixed length.
+
+If you just want to follow the rule you can stop reading now.
+
+Why are there two different cable types for SAS to SATA connectivity?  An objective of the SATA system design was that SATA cables would have identical connectors at each end, and that SATA devices would have identical connectors independent of whether they were disk drives or disk controllers.  This helps to make interconections foolproof and reduces the cost of cables.
+
+If you ever look at a SATA to SATA cable they are identical and wired as a 1:1 cable. In a 1:1 cable pin 1 of end-A goes to pin 1 of end-B, pin 2 to pin 2, pin 3 to pin 3, etc.  If you were to look at the SATA connector on a host-controller or motherboard and the SATA connector on a disk drive they look the same, and are physically the same, but each are wired differently.
+
+A SATA connector has 7 pins. Two of the pins make up the receive pair and two of the pins make up the transmit pair.  The other three pins are all used for ground signals. If a 1:1 ("straight-through") SATA to SATA cable is to work, then the receive pair can not be the same pins on each of the two device connectors (Host vs disk)! If they were the same pins then we would need what is generally referred to as a "cross-over" cable.  The "Absolute Rule" is that the transmit pins on one side must connect to the receive pins on the other side and vice versa. This is true for PC-PC RS232 connections, Ethernet Connections, SATA connections, and almost all types of serial connections which are duplex, i.e. separate receive and transmit cables. 
+
+The SATA cable connector design puts the Host/controller side transmit pair on pins 2 & 3, and the Receive pair on pins 5 & 6.  On the Disk drive the receive pair are pins 2 & 3, and the transmit pair are pins 5 & 6. As a point of reference pin 7 is the keyed pin.
+
+All SAS connectors have their pins structured the same way no matter if they are on a host controller card, or a SAS backplane. Since for each port of the four that make up the SFF-8470 connector the transmit pins and the receive pins are physically in the same location, and we must connect SAS transmit to SATA receive and SAS receive to SATA transmit (for each port); the cables must be different depending on whether the SATA connector is on a disk drive or a Motherboard/Host-Controller.
+
+A SAS to SAS cable must therefore be a "cross over" cable to connect the transmit pairs of a port to the receive pairs of the corresponding port on the other side.
+
+Hope that helps clear up the mystery. 
