@@ -42,7 +42,7 @@ LSI SAS 2008
 
    | C0 | C1 | C2 | C3  
 ---|---|--- |--- | ---
-R3 | P4| P5 |    |  
+R3 | P4| P5 |    | Sys 
 R2 | L | P1 | P2 | P3 
 R1 | L | L  | L  |  L
 R0 | L | L  | L  |  L
@@ -50,7 +50,7 @@ R0 | L | L  | L  |  L
 
 L: Lemons  (4TB)
 P: Peaches 1-5 (3TB)
-
+Sys: system drive SSD
 
 
 # S/N of drives in bays
@@ -309,4 +309,21 @@ wifo3-02            -Create-- --Read--- -Delete-- -Create-- --Read--- -Delete--
 Latency               349ms     127us   12376us     382ms      14us     490ms
 1.97,1.97,wifo3-02,1,1438369124,63G,,1842,89,347029,24,175829,17,3404,89,495890,20,447.9,11,16,,,,,7555,17,+++++,+++,18185,27,7097,12,+++++,+++,11216,21,8735us,16764us,79061us,18280us,32499us,228ms,349ms,127us,12376us,382ms,14us,490ms
 bonnie (END)
+````
+
+## 2015-09-03
+
+* Moving system drive into bay R3C3
+* Rebooting system - no changes needed.
+````
+ldietz@wifo3-02:~$  cat /proc/mdstat 
+Personalities : [raid0] [raid6] [raid5] [raid4] 
+md126 : active raid6 sdf1[5] sdm1[9](S) sdo1[7] sde1[4] sdp1[8] sdc1[2] sda1[0] sdb1[1] sdd1[3]
+      23441295360 blocks super 1.2 level 6, 512k chunk, algorithm 2 [8/8] [UUUUUUUU]
+      bitmap: 0/30 pages [0KB], 65536KB chunk
+
+md127 : active raid0 sdi1[0] sdk1[4] sdj1[3] sdg1[2] sdl1[1]
+      14651322880 blocks super 1.2 512k chunks
+      
+unused devices: <none>
 ````
