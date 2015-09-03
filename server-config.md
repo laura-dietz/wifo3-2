@@ -68,6 +68,8 @@ WD40EFRX
    * r1c3 WCC4E5LSLSUS
 * r2
    * r2c0 WCC4E7ARPUY0
+* r3
+   * r3c3  system drive (?)
 
 
 Raw: 32TB + spare
