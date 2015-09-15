@@ -328,3 +328,37 @@ md127 : active raid0 sdi1[0] sdk1[4] sdj1[3] sdg1[2] sdl1[1]
       
 unused devices: <none>
 ````
+
+## 2015-09-15
+* Labeling hard drives (on bay)
+* Running bonnie++ again
+   * bonnie++ on system drive
+
+````
+Version  1.97       ------Sequential Output------ --Sequential Input- --Random-
+Concurrency   1     -Per Chr- --Block-- -Rewrite- -Per Chr- --Block-- --Seeks--
+Machine        Size K/sec %CP K/sec %CP K/sec %CP K/sec %CP K/sec %CP  /sec %CP
+wifo3-02        63G   991  99 505650  48 248311  22  4198  99 686466  27 +++++ +++
+Latency             18813us     159ms     397ms    3930us    7022us     169ms
+Version  1.97       ------Sequential Create------ --------Random Create--------
+wifo3-02            -Create-- --Read--- -Delete-- -Create-- --Read--- -Delete--
+              files  /sec %CP  /sec %CP  /sec %CP  /sec %CP  /sec %CP  /sec %CP
+                 16 +++++ +++ +++++ +++ +++++ +++ +++++ +++ +++++ +++ +++++ +++
+Latency               693us     587us     655us     936us      16us     923us
+1.97,1.97,wifo3-02,1,1442285956,63G,,991,99,505650,48,248311,22,4198,99,686466,27,+++++,+++,16,,,,,+++++,+++,+++++,+++,+++++,+++,+++++,+++,+++++,+++,+++++,+++,18813us,159ms,397ms,3930us,7022us,169ms,693us,587us,655us,936us,16us,923us
+
+````
+    * bonnie ++ on lemons
+````
+Version  1.97       ------Sequential Output------ --Sequential Input- --Random-
+Concurrency   1     -Per Chr- --Block-- -Rewrite- -Per Chr- --Block-- --Seeks--
+Machine        Size K/sec %CP K/sec %CP K/sec %CP K/sec %CP K/sec %CP  /sec %CP
+wifo3-02        63G   910  42 226340  16 128574  12  3216  86 527467  21 335.7  11
+Latency              7421us   43874us     127ms   40307us   84960us   80635us
+Version  1.97       ------Sequential Create------ --------Random Create--------
+wifo3-02            -Create-- --Read--- -Delete-- -Create-- --Read--- -Delete--
+              files  /sec %CP  /sec %CP  /sec %CP  /sec %CP  /sec %CP  /sec %CP
+                 16  6978  14 +++++ +++ 17601  28  7027  15 +++++ +++ 13611  21
+Latency               310ms     133us   23978us     395ms      16us     808ms
+1.97,1.97,wifo3-02,1,1442286737,63G,,910,42,226340,16,128574,12,3216,86,527467,21,335.7,11,16,,,,,6978,14,+++++,+++,17601,28,7027,15,+++++,+++,13611,21,7421us,43874us,127ms,40307us,84960us,80635us,310ms,133us,23978us,395ms,16us,808ms
+````
