@@ -43,10 +43,9 @@ LSI SAS 2008
    | C0 | C1 | C2 | C3  
 ---|---|--- |--- | ---
 R3 | P4| P5 |    | Sys 
-R2 | L | P1 | P2 | P3 
-R1 | L | L  | L  |  L
-R0 | L | L  | L  |  L
-
+R2 | L9| P1 | P2 | P3 
+R1 | L5| L6 | L7 |  L8
+R0 | L1| L2 | L3 |  L4
 
 L: Lemons  (4TB)
 P: Peaches 1-5 (3TB)
@@ -57,19 +56,19 @@ Sys: system drive SSD
 
 WD40EFRX
 * r0
-   * r0c0 WCC4E2NH22ND
-   * r0c1 WCC4E5AU8Y8K
-   * r0c2 WCC4E5SJCE4N
-   * r0c3 WCC4E3ZH0P1K
+   * r0c0 WCC4E2NH22ND (L1)
+   * r0c1 WCC4E5AU8Y8K (L2)
+   * r0c2 WCC4E5SJCE4N (L3)
+   * r0c3 WCC4E3ZH0P1K (L4)
 * r1
-   * r1c0 WCC4E5LSLTDN
-   * r1c1 WCC4E5SJCUTS
-   * r1c2 WCC4E5LSL184
-   * r1c3 WCC4E5LSLSUS
+   * r1c0 WCC4E5LSLTDN (L5)
+   * r1c1 WCC4E5SJCUTS (L6)
+   * r1c2 WCC4E5LSL184 (L7)
+   * r1c3 WCC4E5LSLSUS (L8)
 * r2
-   * r2c0 WCC4E7ARPUY0
+   * r2c0 WCC4E7ARPUY0 (L9)
 * r3
-   * r3c3  system drive (?)
+   * r3c3  system drive (S1)
 
 
 Raw: 32TB + spare
