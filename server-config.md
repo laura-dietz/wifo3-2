@@ -42,9 +42,9 @@ LSI SAS 2008
 
    | C0 | C1 | C2 | C3  
 ---|---|--- |--- | ---
-R3 | P4| P5 |    | Sys 
+R3 | P4| P5 |    | L8
 R2 | L9| P1 | P2 | P3 
-R1 | L5| L6 | L7 |  L8
+R1 | L5| L6 | L7 |  Sys
 R0 | L1| L2 | L3 |  L4
 
 L: Lemons  (4TB)
@@ -386,3 +386,5 @@ Still seeing CRC errors on system drive
 [   14.520943] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
 
 ````
+
+* Switching L8 with Sys bay to have system drive directly on the motherboard.
