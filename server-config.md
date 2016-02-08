@@ -388,3 +388,16 @@ Still seeing CRC errors on system drive
 ````
 
 * Switching L8 with Sys bay to have system drive directly on the motherboard.
+
+````
+ldietz@wifo3-02:~$ cat /proc/mdstat
+Personalities : [raid0] [raid6] [raid5] [raid4] 
+md126 : active raid6 sdi1[3] sdn1[9](S) sdb1[1] sdg1[7] sde1[4] sdf1[5] sda1[0] sdo1[8] sdc1[2]
+      23441295360 blocks super 1.2 level 6, 512k chunk, algorithm 2 [8/8] [UUUUUUUU]
+      bitmap: 0/30 pages [0KB], 65536KB chunk
+
+md127 : active raid0 sdj1[0] sdl1[4] sdk1[3] sdh1[2] sdm1[1]
+      14651322880 blocks super 1.2 512k chunks
+      
+unused devices: <none>
+````
