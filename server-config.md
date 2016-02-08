@@ -362,3 +362,27 @@ wifo3-02            -Create-- --Read--- -Delete-- -Create-- --Read--- -Delete--
 Latency               310ms     133us   23978us     395ms      16us     808ms
 1.97,1.97,wifo3-02,1,1442286737,63G,,910,42,226340,16,128574,12,3216,86,527467,21,335.7,11,16,,,,,6978,14,+++++,+++,17601,28,7027,15,+++++,+++,13611,21,7421us,43874us,127ms,40307us,84960us,80635us,310ms,133us,23978us,395ms,16us,808ms
 ````
+## 2016-02-08
+
+* System drive read-only, possibly related to excessive memory use and thrashing. (System drive on SAS controller)
+
+* Reconsidering firmware issues, where controller is not truthful to the features it supports, therefore, when the OS uses the features, we get a ton of errors.
+
+* SMART Tests run: long and short, both without errors
+
+* Trying to run conveyance tests, but not supported. Possibly due to SCSI controller.
+
+* Updating Linux kernel to 4.3, to enable the workaround for [bug 72341](https://bugzilla.kernel.org/show_bug.cgi?id=72341) (regarding Samsung EVO / System drive)
+
+Still seeing CRC errors on system drive
+
+````
+[   14.513858] sd 0:0:1:0: [sdi] FAILED Result: hostbyte=DID_OK driverbyte=DRIVER_SENSE
+[   14.513863] sd 0:0:1:0: [sdi] Sense Key : Aborted Command [current] 
+[   14.513867] sd 0:0:1:0: [sdi] Add. Sense: Information unit iuCRC error detected
+[   14.513870] sd 0:0:1:0: [sdi] CDB: Read(10) 28 00 02 c0 17 78 00 00 88 00
+[   14.513872] blk_update_request: I/O error, dev sdi, sector 46143352
+[   14.520939] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[   14.520943] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+
+````
