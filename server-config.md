@@ -31,7 +31,7 @@ LSI SAS 2008
 |------|---------|--------------|-------------|
 |Slot0 | lemons  | ST3000VN000  | Z31004EY    |
 |Slot1 | lemons  | ST3000VN000  | Z3100EJJ    |
-|Slot4 | peaches | WDC WD40EFRX68W  | WDWCC4E7ARPUY0 |
+|Slot4 |         |              |             |
 |Slot5 | lemons  | ST3000VN000  | ST3100EQJ   |
 |Slot6 | lemons  | ST3000VN000  | ST3100DCL   |
 |Slot7 | lemons  | ST3000VN000  | ST3100FIV   |
@@ -42,13 +42,12 @@ LSI SAS 2008
 
    | C0 | C1 | C2 | C3  
 ---|---|--- |--- | ---
-R3 | P4| P5 |    | L8
-R2 | L9| P1 | P2 | P3 
+R3 |   |    |    | L8
+R2 | L9|    |    |    
 R1 | L5| L6 | L7 |  Sys
 R0 | L1| L2 | L3 |  L4
 
 L: Lemons  (4TB)
-P: Peaches 1-5 (3TB)
 Sys: system drive SSD
 
 
@@ -400,4 +399,27 @@ md127 : active raid0 sdj1[0] sdl1[4] sdk1[3] sdh1[2] sdm1[1]
       14651322880 blocks super 1.2 512k chunks
       
 unused devices: <none>
+````
+
+### 2016-06-08
+
+* Took out peaches drives (md126)
+
+* Still errors in dmesg
+
+````
+[   14.403577] Installing knfsd (copyright (C) 1996 okir@monad.swb.de).
+[   14.653388] ioatdma 0000:00:04.1: ioat_timer_event: Channel halted (0)
+[   17.331809] ixgbe 0000:04:00.0 eth0: NIC Link is Up 1 Gbps, Flow Control: None
+[   17.551721] ixgbe 0000:04:00.1 eth1: NIC Link is Up 1 Gbps, Flow Control: None
+[   52.867144] usb 3-1: USB disconnect, device number 2
+[ 4077.269050] mpt2sas0: log_info(0x31080000): originator(PL), code(0x08), sub_code(0x0000)
+[ 4077.269076] sd 0:0:0:0: [sdh] FAILED Result: hostbyte=DID_SOFT_ERROR driverbyte=DRIVER_OK
+[ 4077.269082] sd 0:0:0:0: [sdh] CDB: Read(16) 88 00 00 00 00 01 36 b2 4a 78 00 00 00 08 00 00
+[ 4077.269087] blk_update_request: I/O error, dev sdh, sector 5212621432
+[ 4077.269151] sd 0:0:0:0: [sdh] FAILED Result: hostbyte=DID_OK driverbyte=DRIVER_SENSE
+[ 4077.269156] sd 0:0:0:0: [sdh] Sense Key : Aborted Command [current] 
+[ 4077.269164] sd 0:0:0:0: [sdh] Add. Sense: Information unit iuCRC error detected
+[ 4077.269169] sd 0:0:0:0: [sdh] CDB: Read(16) 88 00 00 00 00 01 36 b2 4a 50 00 00 00 28 00 00
+[ 4077.269172] blk_update_request: I/O error, dev sdh, sector 5212621392
 ````
