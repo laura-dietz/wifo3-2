@@ -423,3 +423,9 @@ unused devices: <none>
 [ 4077.269169] sd 0:0:0:0: [sdh] CDB: Read(16) 88 00 00 00 00 01 36 b2 4a 50 00 00 00 28 00 00
 [ 4077.269172] blk_update_request: I/O error, dev sdh, sector 5212621392
 ````
+
+
+### 2016-06-21
+
+* [xfs causes kernel panic](xfc-kernelpanic). server becomed unresponsible. attempt to reboot causes server to hang.
+
