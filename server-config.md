@@ -428,4 +428,4 @@ unused devices: <none>
 ### 2016-06-21
 
 * [xfs causes kernel panic](xfc-kernelpanic). server becomed unresponsible. attempt to reboot causes server to hang.
-
+* Issue described here [xfs deadlock](https://git.kernel.org/cgit/linux/kernel/git/torvalds/linux.git/commit/?id=7a29ac474a47eb8cf212b45917683ae89d6fa13b)
