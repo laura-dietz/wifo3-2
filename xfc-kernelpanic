@@ -1,0 +1,318 @@
+[1125397.648051] INFO: task kthreadd:2 blocked for more than 120 seconds.
+[1125397.648098]       Not tainted 4.3.0-0.bpo.1-amd64 #1
+[1125397.648130] "echo 0 > /proc/sys/kernel/hung_task_timeout_secs" disables this message.
+[1125397.648178] kthreadd        D ffffffff810a2850     0     2      0 0x00000000
+[1125397.648184]  ffff88085bf1a040 0000000000000046 ffff88085bfe61c0 ffff88085bf88000
+[1125397.648188]  ffff88085bf87860 ffff880856e9c6ac ffff88085bf1a040 00000000ffffffff
+[1125397.648192]  ffff880856e9c6b0 ffffffff81586c7f ffff880856e9c6a8 ffffffff81586f0a
+[1125397.648196] Call Trace:
+[1125397.648207]  [<ffffffff81586c7f>] ? schedule+0x2f/0x70
+[1125397.648212]  [<ffffffff81586f0a>] ? schedule_preempt_disabled+0xa/0x10
+[1125397.648217]  [<ffffffff81588a94>] ? __mutex_lock_slowpath+0xb4/0x120
+[1125397.648222]  [<ffffffff81588b1b>] ? mutex_lock+0x1b/0x30
+[1125397.648267]  [<ffffffffa08a2a97>] ? xfs_reclaim_inodes_ag+0x257/0x2f0 [xfs]
+[1125397.648273]  [<ffffffff81210d1f>] ? fsnotify_destroy_marks+0x5f/0x80
+[1125397.648299]  [<ffffffffa08a35a1>] ? xfs_reclaim_inodes_nr+0x31/0x40 [xfs]
+[1125397.648304]  [<ffffffff811d3471>] ? super_cache_scan+0x181/0x190
+[1125397.648310]  [<ffffffff81172898>] ? shrink_slab.part.42+0x1e8/0x3a0
+[1125397.648315]  [<ffffffff8117680b>] ? shrink_zone+0x26b/0x280
+[1125397.648320]  [<ffffffff811769a0>] ? do_try_to_free_pages+0x180/0x470
+[1125397.648324]  [<ffffffff81176d6c>] ? try_to_free_pages+0xdc/0x150
+[1125397.648328]  [<ffffffff81169c92>] ? __alloc_pages_nodemask+0x5d2/0xa40
+[1125397.648335]  [<ffffffff81071bbb>] ? copy_process+0x1bb/0x1ca0
+[1125397.648340]  [<ffffffff810a5034>] ? account_entity_dequeue+0xa4/0xc0
+[1125397.648344]  [<ffffffff810a75f1>] ? dequeue_entity+0x351/0x940
+[1125397.648349]  [<ffffffff81092150>] ? kthread_park+0x50/0x50
+[1125397.648352]  [<ffffffff8107381b>] ? _do_fork+0x8b/0x330
+[1125397.648357]  [<ffffffff815865fb>] ? __schedule+0x28b/0x8e0
+[1125397.648360]  [<ffffffff81073ae5>] ? kernel_thread+0x25/0x30
+[1125397.648364]  [<ffffffff81092c89>] ? kthreadd+0x199/0x1e0
+[1125397.648368]  [<ffffffff81092af0>] ? kthread_create_on_cpu+0x60/0x60
+[1125397.648372]  [<ffffffff8158ad9f>] ? ret_from_fork+0x3f/0x70
+[1125397.648376]  [<ffffffff81092af0>] ? kthread_create_on_cpu+0x60/0x60
+[1125397.648388] INFO: task kswapd0:81 blocked for more than 120 seconds.
+[1125397.648428]       Not tainted 4.3.0-0.bpo.1-amd64 #1
+[1125397.648459] "echo 0 > /proc/sys/kernel/hung_task_timeout_secs" disables this message.
+[1125397.648506] kswapd0         D ffffffff810a2850     0    81      2 0x00000000
+[1125397.648511]  ffff880075348e80 0000000000000046 ffffffff81a14540 ffff880075350000
+[1125397.648514]  ffff88007534f7e8 ffff88007534f870 ffff880075348e80 ffff880858f6c900
+[1125397.648518]  0000000000006448 ffffffff81586c7f ffff88007534f878 ffffffff81589bd0
+[1125397.648521] Call Trace:
+[1125397.648527]  [<ffffffff81586c7f>] ? schedule+0x2f/0x70
+[1125397.648530]  [<ffffffff81589bd0>] ? schedule_timeout+0x200/0x2a0
+[1125397.648534]  [<ffffffff810a98fa>] ? enqueue_task_fair+0x5a/0x850
+[1125397.648540]  [<ffffffff8101ef65>] ? sched_clock+0x5/0x10
+[1125397.648544]  [<ffffffff8101ef65>] ? sched_clock+0x5/0x10
+[1125397.648548]  [<ffffffff8158769a>] ? wait_for_completion+0xfa/0x130
+[1125397.648553]  [<ffffffff8109cf90>] ? wake_up_q+0x60/0x60
+[1125397.648557]  [<ffffffff8108c8c2>] ? flush_work+0x102/0x180
+[1125397.648562]  [<ffffffff810896f0>] ? destroy_worker+0x80/0x80
+[1125397.648599]  [<ffffffffa08bbbc8>] ? xlog_cil_force_lsn+0x88/0x210 [xfs]
+[1125397.648628]  [<ffffffffa08ba393>] ? _xfs_log_force_lsn+0x63/0x310 [xfs]
+[1125397.648632]  [<ffffffff81068268>] ? flush_tlb_page+0x38/0x90
+[1125397.648638]  [<ffffffff81199bba>] ? page_remove_rmap+0xba/0x100
+[1125397.648664]  [<ffffffffa08ba669>] ? xfs_log_force_lsn+0x29/0x80 [xfs]
+[1125397.648691]  [<ffffffffa08a262b>] ? xfs_reclaim_inode+0x12b/0x340 [xfs]
+[1125397.648718]  [<ffffffffa08a9b4f>] ? __xfs_iunpin_wait+0x9f/0x140 [xfs]
+[1125397.648722]  [<ffffffff810b3250>] ? autoremove_wake_function+0x40/0x40
+[1125397.648746]  [<ffffffffa08a262b>] ? xfs_reclaim_inode+0x12b/0x340 [xfs]
+[1125397.648770]  [<ffffffffa08a2a35>] ? xfs_reclaim_inodes_ag+0x1f5/0x2f0 [xfs]
+[1125397.648793]  [<ffffffffa08a35a1>] ? xfs_reclaim_inodes_nr+0x31/0x40 [xfs]
+[1125397.648798]  [<ffffffff811d3471>] ? super_cache_scan+0x181/0x190
+[1125397.648803]  [<ffffffff81172898>] ? shrink_slab.part.42+0x1e8/0x3a0
+[1125397.648807]  [<ffffffff8117680b>] ? shrink_zone+0x26b/0x280
+[1125397.648812]  [<ffffffff811778bd>] ? kswapd+0x53d/0x9b0
+[1125397.648817]  [<ffffffff81177380>] ? mem_cgroup_shrink_node_zone+0x180/0x180
+[1125397.648821]  [<ffffffff8109222f>] ? kthread+0xdf/0x100
+[1125397.648825]  [<ffffffff81092150>] ? kthread_park+0x50/0x50
+[1125397.648828]  [<ffffffff8158ad9f>] ? ret_from_fork+0x3f/0x70
+[1125397.648832]  [<ffffffff81092150>] ? kthread_park+0x50/0x50
+[1125397.648849] INFO: task xfsaild/md127p1:489 blocked for more than 120 seconds.
+[1125397.648893]       Not tainted 4.3.0-0.bpo.1-amd64 #1
+[1125397.648925] "echo 0 > /proc/sys/kernel/hung_task_timeout_secs" disables this message.
+[1125397.648975] xfsaild/md127p1 D 0000000000000003     0   489      2 0x00000000
+[1125397.648979]  ffff880856f4e300 0000000000000046 ffff88001461f280 ffff880858d1c000
+[1125397.648982]  ffff880858d1bc08 ffff880858d1bc90 ffff880856f4e300 ffff880858f6c900
+[1125397.648986]  0000000000006448 ffffffff81586c7f ffff880858d1bc98 ffffffff81589bd0
+[1125397.648989] Call Trace:
+[1125397.648994]  [<ffffffff81586c7f>] ? schedule+0x2f/0x70
+[1125397.648997]  [<ffffffff81589bd0>] ? schedule_timeout+0x200/0x2a0
+[1125397.649002]  [<ffffffff8158769a>] ? wait_for_completion+0xfa/0x130
+[1125397.649007]  [<ffffffff8109cf90>] ? wake_up_q+0x60/0x60
+[1125397.649010]  [<ffffffff8108c8c2>] ? flush_work+0x102/0x180
+[1125397.649015]  [<ffffffff810896f0>] ? destroy_worker+0x80/0x80
+[1125397.649047]  [<ffffffffa08bbbc8>] ? xlog_cil_force_lsn+0x88/0x210 [xfs]
+[1125397.649052]  [<ffffffff810d72c9>] ? try_to_del_timer_sync+0x59/0x80
+[1125397.649080]  [<ffffffffa08ba06d>] ? _xfs_log_force+0x6d/0x270 [xfs]
+[1125397.649084]  [<ffffffff810d6e50>] ? trace_event_raw_event_tick_stop+0xe0/0xe0
+[1125397.649109]  [<ffffffffa08ba291>] ? xfs_log_force+0x21/0x70 [xfs]
+[1125397.649139]  [<ffffffffa08c45e2>] ? xfsaild+0x172/0x5c0 [xfs]
+[1125397.649167]  [<ffffffffa08c4470>] ? xfs_trans_ail_cursor_first+0x80/0x80 [xfs]
+[1125397.649171]  [<ffffffff8109222f>] ? kthread+0xdf/0x100
+[1125397.649175]  [<ffffffff81092150>] ? kthread_park+0x50/0x50
+[1125397.649179]  [<ffffffff8158ad9f>] ? ret_from_fork+0x3f/0x70
+[1125397.649182]  [<ffffffff81092150>] ? kthread_park+0x50/0x50
+[1125397.649190] INFO: task irqbalance:776 blocked for more than 120 seconds.
+[1125397.649231]       Not tainted 4.3.0-0.bpo.1-amd64 #1
+[1125397.649263] "echo 0 > /proc/sys/kernel/hung_task_timeout_secs" disables this message.
+[1125397.649311] irqbalance      D ffffffff810a2850     0   776      1 0x00000000
+[1125397.649315]  ffff880857698340 0000000000000082 ffffffff81a14540 ffff88084f708000
+[1125397.649319]  ffff88084f707620 ffff880856e9c6ac ffff880857698340 00000000ffffffff
+[1125397.649322]  ffff880856e9c6b0 ffffffff81586c7f ffff880856e9c6a8 ffffffff81586f0a
+[1125397.649325] Call Trace:
+[1125397.649330]  [<ffffffff81586c7f>] ? schedule+0x2f/0x70
+[1125397.649335]  [<ffffffff81586f0a>] ? schedule_preempt_disabled+0xa/0x10
+[1125397.649339]  [<ffffffff81588a94>] ? __mutex_lock_slowpath+0xb4/0x120
+[1125397.649344]  [<ffffffff81588b1b>] ? mutex_lock+0x1b/0x30
+[1125397.649373]  [<ffffffffa08a2a97>] ? xfs_reclaim_inodes_ag+0x257/0x2f0 [xfs]
+[1125397.649400]  [<ffffffffa08aa24e>] ? xfs_iunlock+0x8e/0xf0 [xfs]
+[1125397.649425]  [<ffffffffa0897752>] ? xfs_free_eofblocks+0xd2/0x280 [xfs]
+[1125397.649448]  [<ffffffffa088f143>] ? xfs_perag_get+0x23/0x90 [xfs]
+[1125397.649473]  [<ffffffffa08a342e>] ? xfs_inode_set_reclaim_tag+0x6e/0x160 [xfs]
+[1125397.649477]  [<ffffffff81210d1f>] ? fsnotify_destroy_marks+0x5f/0x80
+[1125397.649499]  [<ffffffffa08a35a1>] ? xfs_reclaim_inodes_nr+0x31/0x40 [xfs]
+[1125397.649504]  [<ffffffff811d3471>] ? super_cache_scan+0x181/0x190
+[1125397.649509]  [<ffffffff81172898>] ? shrink_slab.part.42+0x1e8/0x3a0
+[1125397.649513]  [<ffffffff8117680b>] ? shrink_zone+0x26b/0x280
+[1125397.649518]  [<ffffffff811769a0>] ? do_try_to_free_pages+0x180/0x470
+[1125397.649522]  [<ffffffff81176d6c>] ? try_to_free_pages+0xdc/0x150
+[1125397.649526]  [<ffffffff81169c92>] ? __alloc_pages_nodemask+0x5d2/0xa40
+[1125397.649531]  [<ffffffff811b46bd>] ? kmem_getpages+0x5d/0x100
+[1125397.649535]  [<ffffffff811b6566>] ? fallback_alloc+0x1b6/0x200
+[1125397.649539]  [<ffffffff811f2b43>] ? seq_buf_alloc+0x13/0x30
+[1125397.649544]  [<ffffffff811b80fa>] ? __kmalloc+0x2ca/0x490
+[1125397.649547]  [<ffffffff811f2b43>] ? seq_buf_alloc+0x13/0x30
+[1125397.649550]  [<ffffffff811f2b43>] ? seq_buf_alloc+0x13/0x30
+[1125397.649554]  [<ffffffff8123e9d0>] ? get_iowait_time+0x60/0x60
+[1125397.649558]  [<ffffffff811f3c15>] ? single_open_size+0x25/0x90
+[1125397.649561]  [<ffffffff811f3200>] ? seq_release+0x30/0x30
+[1125397.649566]  [<ffffffff812358e7>] ? proc_reg_open+0x67/0xf0
+[1125397.649570]  [<ffffffff81235880>] ? proc_alloc_inode+0xb0/0xb0
+[1125397.649574]  [<ffffffff811cdb1e>] ? do_dentry_open+0x1be/0x2d0
+[1125397.649578]  [<ffffffff811ddc0a>] ? path_openat+0x20a/0x1560
+[1125397.649583]  [<ffffffff81167fef>] ? free_hot_cold_page_list+0x3f/0x90
+[1125397.649588]  [<ffffffff811e0101>] ? do_filp_open+0x91/0x100
+[1125397.649592]  [<ffffffff811cf21a>] ? do_sys_open+0x13a/0x230
+[1125397.649596]  [<ffffffff8158a9f6>] ? system_call_fast_compare_end+0xc/0x6b
+[1125397.649602] INFO: task tmux:1397 blocked for more than 120 seconds.
+[1125397.649641]       Not tainted 4.3.0-0.bpo.1-amd64 #1
+[1125397.649671] "echo 0 > /proc/sys/kernel/hung_task_timeout_secs" disables this message.
+[1125397.649719] tmux            D ffffffff810a2850     0  1397      1 0x00000000
+[1125397.649722]  ffff8807a847edc0 0000000000000082 ffffffff81a14540 ffff8807a8444000
+[1125397.649726]  ffff8807a8443918 ffff880856e9c6ac ffff8807a847edc0 00000000ffffffff
+[1125397.649729]  ffff880856e9c6b0 ffffffff81586c7f ffff880856e9c6a8 ffffffff81586f0a
+[1125397.649733] Call Trace:
+[1125397.649737]  [<ffffffff81586c7f>] ? schedule+0x2f/0x70
+[1125397.649742]  [<ffffffff81586f0a>] ? schedule_preempt_disabled+0xa/0x10
+[1125397.649746]  [<ffffffff81588a94>] ? __mutex_lock_slowpath+0xb4/0x120
+[1125397.649751]  [<ffffffff81588b1b>] ? mutex_lock+0x1b/0x30
+[1125397.649776]  [<ffffffffa08a2a97>] ? xfs_reclaim_inodes_ag+0x257/0x2f0 [xfs]
+[1125397.649801]  [<ffffffffa08aa24e>] ? xfs_iunlock+0x8e/0xf0 [xfs]
+[1125397.649825]  [<ffffffffa0897752>] ? xfs_free_eofblocks+0xd2/0x280 [xfs]
+[1125397.649847]  [<ffffffffa088f143>] ? xfs_perag_get+0x23/0x90 [xfs]
+[1125397.649870]  [<ffffffffa08a342e>] ? xfs_inode_set_reclaim_tag+0x6e/0x160 [xfs]
+[1125397.649875]  [<ffffffff81210d1f>] ? fsnotify_destroy_marks+0x5f/0x80
+[1125397.649896]  [<ffffffffa08a35a1>] ? xfs_reclaim_inodes_nr+0x31/0x40 [xfs]
+[1125397.649901]  [<ffffffff811d3471>] ? super_cache_scan+0x181/0x190
+[1125397.649905]  [<ffffffff81172898>] ? shrink_slab.part.42+0x1e8/0x3a0
+[1125397.649910]  [<ffffffff8117680b>] ? shrink_zone+0x26b/0x280
+[1125397.649914]  [<ffffffff811769a0>] ? do_try_to_free_pages+0x180/0x470
+[1125397.649919]  [<ffffffff81176d6c>] ? try_to_free_pages+0xdc/0x150
+[1125397.649922]  [<ffffffff81169c92>] ? __alloc_pages_nodemask+0x5d2/0xa40
+[1125397.649926]  [<ffffffff811ad91f>] ? alloc_pages_current+0x8f/0x100
+[1125397.649931]  [<ffffffff81164efa>] ? __get_free_pages+0xa/0x40
+[1125397.649936]  [<ffffffff812375ad>] ? proc_pid_readlink+0x7d/0xf0
+[1125397.649939]  [<ffffffff811d5262>] ? SyS_readlink+0x102/0x120
+[1125397.649943]  [<ffffffff8158a9f6>] ? system_call_fast_compare_end+0xc/0x6b
+[1125397.649949] INFO: task tmux:18799 blocked for more than 120 seconds.
+[1125397.649989]       Not tainted 4.3.0-0.bpo.1-amd64 #1
+[1125397.650020] "echo 0 > /proc/sys/kernel/hung_task_timeout_secs" disables this message.
+[1125397.650067] tmux            D ffffffff810a2850     0 18799      1 0x00000000
+[1125397.650071]  ffff880856821100 0000000000000082 ffffffff81a14540 ffff88060e308000
+[1125397.650074]  ffff88060e3078b8 ffff880856e9c6ac ffff880856821100 00000000ffffffff
+[1125397.650077]  ffff880856e9c6b0 ffffffff81586c7f ffff880856e9c6a8 ffffffff81586f0a
+[1125397.650081] Call Trace:
+[1125397.650086]  [<ffffffff81586c7f>] ? schedule+0x2f/0x70
+[1125397.650090]  [<ffffffff81586f0a>] ? schedule_preempt_disabled+0xa/0x10
+[1125397.650094]  [<ffffffff81588a94>] ? __mutex_lock_slowpath+0xb4/0x120
+[1125397.650099]  [<ffffffff81588b1b>] ? mutex_lock+0x1b/0x30
+[1125397.650122]  [<ffffffffa08a2a97>] ? xfs_reclaim_inodes_ag+0x257/0x2f0 [xfs]
+[1125397.650146]  [<ffffffffa08aa24e>] ? xfs_iunlock+0x8e/0xf0 [xfs]
+[1125397.650169]  [<ffffffffa0897752>] ? xfs_free_eofblocks+0xd2/0x280 [xfs]
+[1125397.650190]  [<ffffffffa088f143>] ? xfs_perag_get+0x23/0x90 [xfs]
+[1125397.650213]  [<ffffffffa08a1e54>] ? xfs_reclaim_work_queue+0x54/0x60 [xfs]
+[1125397.650233]  [<ffffffffa08a34b6>] ? xfs_inode_set_reclaim_tag+0xf6/0x160 [xfs]
+[1125397.650238]  [<ffffffff811eab42>] ? dispose_list+0x32/0x50
+[1125397.650258]  [<ffffffffa08a35a1>] ? xfs_reclaim_inodes_nr+0x31/0x40 [xfs]
+[1125397.650262]  [<ffffffff811d3471>] ? super_cache_scan+0x181/0x190
+[1125397.650267]  [<ffffffff81172898>] ? shrink_slab.part.42+0x1e8/0x3a0
+[1125397.650271]  [<ffffffff8117680b>] ? shrink_zone+0x26b/0x280
+[1125397.650276]  [<ffffffff811769a0>] ? do_try_to_free_pages+0x180/0x470
+[1125397.650280]  [<ffffffff81176d6c>] ? try_to_free_pages+0xdc/0x150
+[1125397.650283]  [<ffffffff81169c92>] ? __alloc_pages_nodemask+0x5d2/0xa40
+[1125397.650288]  [<ffffffff811ad91f>] ? alloc_pages_current+0x8f/0x100
+[1125397.650292]  [<ffffffff81164efa>] ? __get_free_pages+0xa/0x40
+[1125397.650295]  [<ffffffff81238860>] ? proc_pid_cmdline_read+0x90/0x510
+[1125397.650299]  [<ffffffff811cffd1>] ? vfs_read+0x81/0x120
+[1125397.650303]  [<ffffffff811d0db2>] ? SyS_read+0x52/0xc0
+[1125397.650306]  [<ffffffff8158a9f6>] ? system_call_fast_compare_end+0xc/0x6b
+[1125397.650310] INFO: task watch:6360 blocked for more than 120 seconds.
+[1125397.650350]       Not tainted 4.3.0-0.bpo.1-amd64 #1
+[1125397.650381] "echo 0 > /proc/sys/kernel/hung_task_timeout_secs" disables this message.
+[1125397.650428] watch           D ffffffff810a2850     0  6360  19208 0x00000000
+[1125397.650432]  ffff880071459180 0000000000000082 ffff88085bfe4180 ffff88003cb88000
+[1125397.650435]  ffff88003cb878b8 ffff880856e9c6ac ffff880071459180 00000000ffffffff
+[1125397.650439]  ffff880856e9c6b0 ffffffff81586c7f ffff880856e9c6a8 ffffffff81586f0a
+[1125397.650442] Call Trace:
+[1125397.650447]  [<ffffffff81586c7f>] ? schedule+0x2f/0x70
+[1125397.650451]  [<ffffffff81586f0a>] ? schedule_preempt_disabled+0xa/0x10
+[1125397.650455]  [<ffffffff81588a94>] ? __mutex_lock_slowpath+0xb4/0x120
+[1125397.650460]  [<ffffffff81588b1b>] ? mutex_lock+0x1b/0x30
+[1125397.650483]  [<ffffffffa08a2a97>] ? xfs_reclaim_inodes_ag+0x257/0x2f0 [xfs]
+[1125397.650488]  [<ffffffff8117feab>] ? wait_iff_congested+0xab/0x140
+[1125397.650492]  [<ffffffff810b3210>] ? wait_woken+0x90/0x90
+[1125397.650495]  [<ffffffff811891e9>] ? list_lru_isolate_move+0x29/0x40
+[1125397.650499]  [<ffffffff811eb55a>] ? inode_lru_isolate+0x2a/0x1b0
+[1125397.650503]  [<ffffffff811892c5>] ? __list_lru_walk_one.isra.9+0x95/0x100
+[1125397.650522]  [<ffffffffa08a35a1>] ? xfs_reclaim_inodes_nr+0x31/0x40 [xfs]
+[1125397.650527]  [<ffffffff811d3471>] ? super_cache_scan+0x181/0x190
+[1125397.650531]  [<ffffffff81172898>] ? shrink_slab.part.42+0x1e8/0x3a0
+[1125397.650536]  [<ffffffff8117680b>] ? shrink_zone+0x26b/0x280
+[1125397.650540]  [<ffffffff811769a0>] ? do_try_to_free_pages+0x180/0x470
+[1125397.650545]  [<ffffffff81176d6c>] ? try_to_free_pages+0xdc/0x150
+[1125397.650548]  [<ffffffff81169c92>] ? __alloc_pages_nodemask+0x5d2/0xa40
+[1125397.650554]  [<ffffffff81071bbb>] ? copy_process+0x1bb/0x1ca0
+[1125397.650558]  [<ffffffff811d1a10>] ? get_empty_filp+0xd0/0x1b0
+[1125397.650561]  [<ffffffff8107381b>] ? _do_fork+0x8b/0x330
+[1125397.650565]  [<ffffffff8158a9f6>] ? system_call_fast_compare_end+0xc/0x6b
+[1125397.650570] INFO: task htop:31423 blocked for more than 120 seconds.
+[1125397.650609]       Not tainted 4.3.0-0.bpo.1-amd64 #1
+[1125397.650640] "echo 0 > /proc/sys/kernel/hung_task_timeout_secs" disables this message.
+[1125397.650687] htop            D ffffffff810a2850     0 31423   6365 0x00000000
+[1125397.650691]  ffff880513bef080 0000000000000086 ffff88085bff6f40 ffff8802ad460000
+[1125397.650694]  ffff8802ad45f620 ffff880856e9c6ac ffff880513bef080 00000000ffffffff
+[1125397.650698]  ffff880856e9c6b0 ffffffff81586c7f ffff880856e9c6a8 ffffffff81586f0a
+[1125397.650701] Call Trace:
+[1125397.650706]  [<ffffffff81586c7f>] ? schedule+0x2f/0x70
+[1125397.650710]  [<ffffffff81586f0a>] ? schedule_preempt_disabled+0xa/0x10
+[1125397.650714]  [<ffffffff81588a94>] ? __mutex_lock_slowpath+0xb4/0x120
+[1125397.650719]  [<ffffffff81588b1b>] ? mutex_lock+0x1b/0x30
+[1125397.650741]  [<ffffffffa08a2a97>] ? xfs_reclaim_inodes_ag+0x257/0x2f0 [xfs]
+[1125397.650765]  [<ffffffffa0897752>] ? xfs_free_eofblocks+0xd2/0x280 [xfs]
+[1125397.650787]  [<ffffffffa088f143>] ? xfs_perag_get+0x23/0x90 [xfs]
+[1125397.650808]  [<ffffffffa08a342e>] ? xfs_inode_set_reclaim_tag+0x6e/0x160 [xfs]
+[1125397.650812]  [<ffffffff81210d1f>] ? fsnotify_destroy_marks+0x5f/0x80
+[1125397.650832]  [<ffffffffa08a35a1>] ? xfs_reclaim_inodes_nr+0x31/0x40 [xfs]
+[1125397.650837]  [<ffffffff811d3471>] ? super_cache_scan+0x181/0x190
+[1125397.650841]  [<ffffffff81172898>] ? shrink_slab.part.42+0x1e8/0x3a0
+[1125397.650846]  [<ffffffff8117680b>] ? shrink_zone+0x26b/0x280
+[1125397.650850]  [<ffffffff811769a0>] ? do_try_to_free_pages+0x180/0x470
+[1125397.650855]  [<ffffffff81176d6c>] ? try_to_free_pages+0xdc/0x150
+[1125397.650858]  [<ffffffff81169c92>] ? __alloc_pages_nodemask+0x5d2/0xa40
+[1125397.650863]  [<ffffffff811b46bd>] ? kmem_getpages+0x5d/0x100
+[1125397.650867]  [<ffffffff811b6566>] ? fallback_alloc+0x1b6/0x200
+[1125397.650871]  [<ffffffff811f2b43>] ? seq_buf_alloc+0x13/0x30
+[1125397.650875]  [<ffffffff811b80fa>] ? __kmalloc+0x2ca/0x490
+[1125397.650878]  [<ffffffff811f2b43>] ? seq_buf_alloc+0x13/0x30
+[1125397.650881]  [<ffffffff811f2b43>] ? seq_buf_alloc+0x13/0x30
+[1125397.650885]  [<ffffffff8123e9d0>] ? get_iowait_time+0x60/0x60
+[1125397.650888]  [<ffffffff811f3c15>] ? single_open_size+0x25/0x90
+[1125397.650892]  [<ffffffff811f3200>] ? seq_release+0x30/0x30
+[1125397.650896]  [<ffffffff812358e7>] ? proc_reg_open+0x67/0xf0
+[1125397.650900]  [<ffffffff81235880>] ? proc_alloc_inode+0xb0/0xb0
+[1125397.650903]  [<ffffffff811cdb1e>] ? do_dentry_open+0x1be/0x2d0
+[1125397.650907]  [<ffffffff811ddc0a>] ? path_openat+0x20a/0x1560
+[1125397.650912]  [<ffffffff81167fef>] ? free_hot_cold_page_list+0x3f/0x90
+[1125397.650916]  [<ffffffff811e0101>] ? do_filp_open+0x91/0x100
+[1125397.650920]  [<ffffffff811cf21a>] ? do_sys_open+0x13a/0x230
+[1125397.650924]  [<ffffffff8158a9f6>] ? system_call_fast_compare_end+0xc/0x6b
+[1125397.650928] INFO: task kworker/2:2H:10410 blocked for more than 120 seconds.
+[1125397.650972]       Not tainted 4.3.0-0.bpo.1-amd64 #1
+[1125397.651003] "echo 0 > /proc/sys/kernel/hung_task_timeout_secs" disables this message.
+[1125397.651050] kworker/2:2H    D ffffffff810a2850     0 10410      2 0x00000000
+[1125397.651086] Workqueue: xfs-log/md127p1 xfs_log_worker [xfs]
+[1125397.651089]  ffff88073a6cf200 0000000000000046 ffff88085bfe4180 ffff8801bd214000
+[1125397.651092]  ffff8801bd213c20 ffff8801bd213ca8 ffff88073a6cf200 ffff880858f6c900
+[1125397.651095]  0000000000006449 ffffffff81586c7f ffff8801bd213cb0 ffffffff81589bd0
+[1125397.651099] Call Trace:
+[1125397.651104]  [<ffffffff81586c7f>] ? schedule+0x2f/0x70
+[1125397.651107]  [<ffffffff81589bd0>] ? schedule_timeout+0x200/0x2a0
+[1125397.651112]  [<ffffffff810a872d>] ? check_preempt_wakeup+0x15d/0x1d0
+[1125397.651116]  [<ffffffff8158769a>] ? wait_for_completion+0xfa/0x130
+[1125397.651121]  [<ffffffff8109cf90>] ? wake_up_q+0x60/0x60
+[1125397.651124]  [<ffffffff8108c8c2>] ? flush_work+0x102/0x180
+[1125397.651130]  [<ffffffff810896f0>] ? destroy_worker+0x80/0x80
+[1125397.651158]  [<ffffffffa08bbbc8>] ? xlog_cil_force_lsn+0x88/0x210 [xfs]
+[1125397.651163]  [<ffffffff810a5034>] ? account_entity_dequeue+0xa4/0xc0
+[1125397.651190]  [<ffffffffa08ba06d>] ? _xfs_log_force+0x6d/0x270 [xfs]
+[1125397.651196]  [<ffffffff8101472c>] ? __switch_to+0x25c/0x590
+[1125397.651221]  [<ffffffffa08ba291>] ? xfs_log_force+0x21/0x70 [xfs]
+[1125397.651245]  [<ffffffffa08ba300>] ? xfs_log_worker+0x20/0x50 [xfs]
+[1125397.651248]  [<ffffffff8108c53a>] ? process_one_work+0x14a/0x3d0
+[1125397.651251]  [<ffffffff8108cf75>] ? worker_thread+0x65/0x460
+[1125397.651255]  [<ffffffff8108cf10>] ? rescuer_thread+0x310/0x310
+[1125397.651259]  [<ffffffff8109222f>] ? kthread+0xdf/0x100
+[1125397.651263]  [<ffffffff81092150>] ? kthread_park+0x50/0x50
+[1125397.651267]  [<ffffffff8158ad9f>] ? ret_from_fork+0x3f/0x70
+[1125397.651271]  [<ffffffff81092150>] ? kthread_park+0x50/0x50
+[1125397.651279] INFO: task kworker/3:5:32364 blocked for more than 120 seconds.
+[1125397.651323]       Not tainted 4.3.0-0.bpo.1-amd64 #1
+[1125397.651354] "echo 0 > /proc/sys/kernel/hung_task_timeout_secs" disables this message.
+[1125397.651400] kworker/3:5     D ffff88087fc75d80     0 32364      2 0x00000000
+[1125397.651431] Workqueue: xfs-cil/md127p1 xlog_cil_push_work [xfs]
+[1125397.651433]  ffff88001461f280 0000000000000046 ffff88002288d1c0 ffff880017730000
+[1125397.651436]  ffff88016bae8468 00000000000180c0 ffff88085653b100 ffff880858f6cd00
+[1125397.651439]  ffff88085653b000 ffffffff81586c7f ffff88085653b128 ffffffffa08b9475
+[1125397.651443] Call Trace:
+[1125397.651448]  [<ffffffff81586c7f>] ? schedule+0x2f/0x70
+[1125397.651473]  [<ffffffffa08b9475>] ? xlog_state_get_iclog_space+0x105/0x2d0 [xfs]
+[1125397.651478]  [<ffffffff8109cf90>] ? wake_up_q+0x60/0x60
+[1125397.651502]  [<ffffffffa08b9953>] ? xlog_write+0x1a3/0x760 [xfs]
+[1125397.651526]  [<ffffffffa08bb417>] ? xlog_cil_push+0x217/0x3c0 [xfs]
+[1125397.651530]  [<ffffffff8108c53a>] ? process_one_work+0x14a/0x3d0
+[1125397.651533]  [<ffffffff8108d0dc>] ? worker_thread+0x1cc/0x460
+[1125397.651536]  [<ffffffff8108cf10>] ? rescuer_thread+0x310/0x310
+[1125397.651540]  [<ffffffff8109222f>] ? kthread+0xdf/0x100
+[1125397.651544]  [<ffffffff81092150>] ? kthread_park+0x50/0x50
+[1125397.651548]  [<ffffffff8158ad9f>] ? ret_from_fork+0x3f/0x70
+[1125397.651552]  [<ffffffff81092150>] ? kthread_park+0x50/0x50
